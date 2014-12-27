@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>山寨淘宝-导航条</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			font-size: 12px;
+			line-height: 1.7;
+		}
+		li {
+			list-style: none;
+		}
+		#content {
+			width: 1000px;
+			margin: 0 auto;
+		}
+		#content h1 {
+			font-size: 1.5em;
+		}
+		.item {
+			margin-bottom: 20px;
+			border: 1px dotted #d3c6c6;
+			padding: 20px;
+		}
+		.item h2 {
+			font-size: 1.3em;
+			font-weight: bold;
+			border-bottom: 1px solid #431d1d;
+			margin-bottom: 10px;
+		}
+		.item li {
+			display: inline;
+			margin-right: 10px;
+		}
+		.item li a img {
+			width: 300px;
+			height: 300px;
+			border: none;
+		}
+		#menu {
+			position: fixed;
+			top: 30%;
+			left: 50%;
+			margin-left: 500px;
+			width: 100px;
+		}
+		#menu ul li a {
+			display: block;
+			width: 100px;
+			height: 48px;
+			padding: 15px;
+			font-size: 1.2em;
+			font-weight: bold;
+			color: #333;
+			line-height: 48px;
+			text-decoration: none;
+			text-align: center;
+		}
+		#menu ul li a:hover,
+		#menu ul li a.current {
+			color: #fff;
+			background-color: #444;
+			cursor: pointer;
+		}
+	</style>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				var top = $(document).scrollTop();
+				var menu = $("#menu");
+				var items = $("#content").find(".item");
+
+				var currentId = "";
+				items.each(function () {
+					var This = $(this);
+					var itemTop = This.offset().top;
+					if (top > itemTop - 300) {
+						currentId = "#" + This.attr("id");
+					} else {
+						return false;
+					}
+				})
+
+				var currentLink = menu.find(".current");
+				if (currentId && currentLink.attr("href") != currentId) {
+					currentLink.removeClass("current");
+					menu.find("[href=" + currentId + "]").addClass("current")
+				}
+				//				console.log(itemTop);
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div id="menu">
+		<ul>
+			<li>
+				<a href="#item1" class="current">1F 女装</a>
+			</li>
+			<li>
+				<a href="#item2">2F 美妆</a>
+			</li>
+			<li>
+				<a href="#item3">3F 男装</a>
+			</li>
+			<li>
+				<a href="#item4">4F 箱包</a>
+			</li>
+			<li>
+				<a href="#item5">5F 户外</a>
+			</li>
+		</ul>
+	</div>
+	<div id="content">
+		<h1>山寨天猫</h1>
+		<div id="item1" class="item">
+			<h2>1F 女装</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="1.jpg" alt="$">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="item2" class="item">
+			<h2>2F 美妆</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="2.jpg" alt="$">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="item3" class="item">
+			<h2>3F 男装</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="3.jpg" alt="$">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="item4" class="item">
+			<h2>4F 箱包</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="4.jpg" alt="$">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="item5" class="item">
+			<h2>5F 户外</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="5.jpg" alt="$">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
