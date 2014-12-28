@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font: normal normal bolder 1em/1.5 sans-serif;
+	background-color: #333;
+}
+#box{
+	width: 850px;
+	margin: 200px auto;
+	border:1px solid #3c8080;
+	position: relative;
+}
+.link{
+	display: inline-block;
+	width:200px;
+	margin: 0 30px;
+}
+.link .img{
+	display: block;
+	width:180px;
+	height:180px;
+	margin-bottom: 20px;
+	-webkit-transition:all 0.5s cubic-bezier(0, .18, 0, .97);
+	transition:all 0.5s cubic-bezier(0, .18, 0, .97);
+}
+.mis .img{
+	background: url(../images/mission.png) no-repeat  center 0;
+}
+.pla .img{
+	background: url(../images/play.png) no-repeat  center 0;
+}
+.tou .img{
+	background: url(../images/touch.png) no-repeat  center 0;
+}
+.link .img:hover{
+	-webkit-transform: rotate(360deg) scale(1.2);
+	-ms-transform: rotate(360deg) scale(1.2);
+	transform: rotate(360deg) scale(1.2);
+}
+.btn{
+	display: inline-block;
+	position: relative;
+	width:180px;
+	height:50px;
+	line-height: 50px;
+	text-indent: 1.5em;
+	margin:0 auto;
+	border:2px solid rgba(255, 255, 255,0.6);
+	text-decoration: none;
+	color:rgba(46, 199, 46, 0.81);
+	font-family: Arial;
+	font-size:18px;
+	font-weight: border;
+	box-sizing: border-box;
+	background: url(../images/allow.png) no-repeat 120px center;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.btn:hover{
+	border:2px solid rgba(255,255,255,1);
+	background: url(../images/allow.png) no-repeat 130px center;
+}
+.btn .line{
+	display: block;
+	position:absolute;
+	background: none;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.btn:hover .line{
+	background: #fff;
+}
+.btn .top{
+	left:-110%;
+	top:-2px;
+}
+.btn:hover .top{
+	left:0px;
+	width:100%;
+	height:2px;
+}
+.btn .right{
+	top:-110%;
+	left:100%;
+}
+.btn:hover .right{
+	top:0px;
+	height:100%;
+	width:2px;
+}
+.btn .bottom{
+	left:120%;
+	top:100%;
+}
+.btn:hover .bottom{
+	left:0;
+	height:2px;
+	width:100%;
+}
+.btn .left{
+	bottom:-110%;
+	left:-2px;
+}
+.btn:hover .left{
+	bottom:-2px;
+	height:100%;
+	width:2px;
+}
+.tip{
+	position: absolute;
+	border-radius: 3px;
+	background: rgba(46, 199, 46, 1);
+	top:100px;
+	left:35px;
+	height:35px;
+	line-height: 35px;
+	padding:0 10px;
+	color:#fff;
+	font-weight: normal;
+	margin:0 auto;
+	opacity: 0;
+}
+.tip em{
+	font-style: normal;
+}
+.tip span{
+	position:absolute;
+	display: block;
+	width:0;
+	height:0;
+	overflow: hidden;
+	border:8px solid transparent;
+	border-top-color: rgba(46, 199, 46, 1);
+	top:35px;
+	left:50%;
+	margin-left:-3px;
+}
