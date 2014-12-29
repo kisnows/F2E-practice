@@ -9,7 +9,6 @@ body{
 #box{
 	width: 850px;
 	margin: 200px auto;
-	border:1px solid #3c8080;
 	position: relative;
 }
 .link{
