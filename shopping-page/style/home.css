@@ -102,25 +102,27 @@
 /*	background-color: blue;*/
 	overflow: hidden;
 }
-#slide{
+#slide a{
 	position: absolute;
+/*	z-index: 1;*/
+	height: 325px;
 	left:0;
 	top:0;
 }
-.btn{
+#num{
 	position: absolute;
 	left:0;
 	bottom:10px;
 	width:100%;
 	text-align:center;
 }
-.btn a{
+#num a{
 	display: inline-block;
 	width:20px;
 	height:5px;
 	background-color: #fdfafa;
 	margin-right: 10px;
 }
-.btn .active{		/*通过js来实现图片切换*/
+#num .active{		/*通过js来实现图片切换*/
 	background-color: #dee537;
 }
