@@ -6,22 +6,25 @@
 </head>
 <style>
 	.a{
-		background-color: blue;
 		position: relative;
+		height: 299px;
 	}
-	.b{
-		height:300px;
+	.a li{
 		position: absolute;
+		z-index: 1;
+		width:100%;
 	}
-	.footer{
-		height: 200px;
-		background-color: red;
-	}
+	.red{background-color: red;height: 150px;}
+	.blue{background-color: blue;height: 100px;}
 </style>
 <body>
 	<div class="a">
-		<div class="b"></div>
+		<li>
+			<div class="red">我在第一个面</div>
+		</li>
+		<li>
+			<div class="blue">我在第二个面</div>
+		</li>
 	</div>
-	<div class="footer"></div>
 </body>
 </html>

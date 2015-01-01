@@ -62,7 +62,7 @@
 	top:0px;
 	left: 190px;
 	width:570px;
-	height: 380px;
+	height: 370px;
 	border:1px solid #dddddd;
 	background-color: #ffffff;
 }
@@ -90,21 +90,25 @@
 	background: #2785e6 url("../img/arrow2.png") no-repeat 88% 8px;
 	height: 26px;
 	line-height: 26px;
-	padding:0 20px 0 4px;
+	padding:0 30px 0 4px;
 	color:#ffffff;
 	font-weight:bolder;
 }
-
+.tip .last{
+	border:none;
+}
+/*banner区*/
+.top{
+	overflow: hidden;
+}
 #banner {
 	height: 325px;
 	width:810px;
 	position: relative;
-/*	background-color: blue;*/
 	overflow: hidden;
 }
 #slide a{
 	position: absolute;
-/*	z-index: 1;*/
 	height: 325px;
 	left:0;
 	top:0;
@@ -125,4 +129,54 @@
 }
 #num .active{		/*通过js来实现图片切换*/
 	background-color: #dee537;
+}
+/*分类1*/
+.item{
+	position: relative;
+	height:478px;
+}
+.title{
+	height: 52px;
+	padding: 14px 0px;
+	overflow: hidden;
+}
+.title .left{
+	padding-left: 10px;
+	line-height: 52px;
+	padding-top: 5px;
+}
+.title .right{
+	color:#000000;
+	padding-top: 30px;
+}
+.item .banner{
+	position: relative;
+	height: 398px;
+	width:190px;
+	overflow: hidden;
+}
+.item .banner a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:398px;
+}
+.item .products{
+	display: block;
+	width:808px;
+	height:395px;
+	overflow: hidden;
+	border:1px solid #cccccc;
+	border-left: none;
+	border-bottom: 2px solid #ff7201
+}
+.products td{
+	width:197px;
+	border-right: 1px solid #cccccc;
+}
+.products .small td{
+	border-top: 1px solid #cccccc;
+}
+.products .last{
+	border-right:none;
 }

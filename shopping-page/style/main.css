@@ -153,6 +153,7 @@ li{list-style: none;}
 /*页脚*/
 #footer{
 	height:176px;
+	margin-top: 40px;
 	padding-top: 52px;
 	background-color: #d4d4d4;
 	text-align: center;
