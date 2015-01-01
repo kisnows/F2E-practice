@@ -125,7 +125,6 @@ li{list-style: none;}
 	right:11px;
 }
 /*导航栏*/
-/*.nav{overflow: hidden;}*/
 .nav .left{
 	position: relative;
 }
@@ -150,71 +149,25 @@ li{list-style: none;}
 .nav li.active{
 	background-color: #4593fd;
 }
-/*导航栏下拉菜单*/
-.menu{
-	background: #4593fd url("../img/arrow2.png") no-repeat 174px 20px;
-	height:62px;
-	border-top: 1px solid #5aa1fe;
-	border-bottom: 1px solid #3487f2;
-}
-.menu dt{
-	clear:both;
-	margin: 12px 10px 0px;
-}
-.menu dd{
-	float:left;
-	margin-left: 10px;
-}
-.menu dd a{
-	font-size: 12px;
-	font-weight: normal;
-}
-.menu .str{
-	font-size: 12px;
-	font-weight: normal;
-	margin-left: 6px;
-	background:url("../img/btn.png") 0 center no-repeat;
-	width:48px;
-	height:20px;
-	display: inline-block;
+
+/*页脚*/
+#footer{
+	height:176px;
+	padding-top: 52px;
+	background-color: #d4d4d4;
 	text-align: center;
 }
-/*menu下的二级菜单*/
-.menu .tip{
-	position: absolute;
-	display: none;		//通过js来实现
-	color: #4b88da;
-	top:35px;
-	left: 190px;
-	width:570px;
-	height: 380px;
-	border:1px solid #dddddd;
+#footer a{
+	color: #000000;
 }
-.tip dl{
-	width:534px;
-	margin: 0 auto;
-	padding:12px 0 10px;
-	border-bottom: 1px solid #dddddd;
-	display: block;overflow: hidden;
+#footer p{
+	width:1000px;
+	margin:0 auto;
 }
-.tip dt{
+#footer span{
 	display: block;
-	float:left;
-	clear:none;
-	margin-top: 0;
-	height: 24px;
-}
-.tip dd{
-	float:left;
-	font-weight: normal;
-	color:#666666;
-}
-.tip .last{border-bottom: none;}
-.tip .tip-btn{
-	background: #2785e6 url("../img/arrow2.png") no-repeat 88% 8px;
-	height: 26px;
-	line-height: 26px;
-	padding:0 20px 0 4px;
-	color:#ffffff;
-	font-weight: border;
+	width:600px;
+	height:100px;
+	background: url("../img/iconbg.png") repeat-x 0 -55px;
+	margin:30px auto;
 }
