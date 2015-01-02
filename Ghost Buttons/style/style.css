@@ -127,11 +127,11 @@ body{
 .tip span{
 	position:absolute;
 	display: block;
-	width:0;
+	width:0;	/* 三角形 */
 	height:0;
 	overflow: hidden;
 	border:8px solid transparent;
-	border-top-color: rgba(46, 199, 46, 1);
+	border-top-color: rgba(46, 199, 46, 1);		/* 向下的三角形 */
 	top:35px;
 	left:50%;
 	margin-left:-3px;
