@@ -26,7 +26,7 @@ shop.tools.getStyle = function (obj, attr) //获取对象属性
 	}
 };
 
-shop.ui = {};
+shop.ui = {}; 
 shop.ui.fadeIn = function (obj) //淡入效果
 {
 	var attr = shop.tools.getStyle(obj, 'opacity');
