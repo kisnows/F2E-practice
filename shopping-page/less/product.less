@@ -17,12 +17,15 @@ body{
 		padding-right: 4px;
 	}
 }
-.border(@color: #cccccc){
+@bor-color:#cccccc;
+.border(@color: @bor-color){
 	border:1px solid @color;
+	background-color: #ffffff;
 }
 .arg{
 	background-color: #ffffff;
 	height: 592px;
+	color:#666666;
 	.border;
 	.left{
 		border-right:1px solid #cccccc;
@@ -44,6 +47,7 @@ body{
 		float: right;
 		width:685px;
 		h2{
+			color:#000000;
 			font-size: 16px;
 			font-weight: bolder;
 			line-height: 1.5;
@@ -55,34 +59,50 @@ body{
 		}
 		.change{
 			background: url("../img/detailed/label.png") center center;
+			color:#ffffff;
+			display: inline-block;
+			vertical-align: top;
+			width:54px;
+			height:18px;
+			text-indent: 14px;
+			margin-right: 6px;
 		}
 		.title(@wid:20px){
 			padding-left:@wid;
 			display: inline-block;
 			width: 60px;
 		}
-			
+		.tit{
+			.title;
+		}
 		.choice{
 			background-color: #f2f2f2;
-			color:#666666;
-			margin: 0 12px 0 12px;
+			margin: 12px 12px 0 12px;
 			padding:20px 0 20px 12px;
 			li{
-				padding-bottom: 14px;
+				padding-bottom: 24px;
+			}
+			.tit{
+				.title(0px);
 			}
 			select{
 				.border;
 			}
+
 			.color span{
 				text-align: center;
 				padding:8px 25px;
-				.border(#317ee7);
+				.border;
 				color:#000000;
 				margin-right: 12px;
 			}
 			.specification span{
-				.border(#317ee7);
+				padding:6px 4px;
+				.border;
 				margin-right: 12px;
+			}
+			.color .select,.specification .select{
+				.border(#0479ca);
 			}
 			@btn-color:#fe8900;
 			.count{

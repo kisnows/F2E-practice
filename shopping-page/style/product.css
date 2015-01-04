@@ -17,9 +17,10 @@ body {
   padding-right: 4px;
 }
 .arg {
-  background-color: #ffffff;
   height: 592px;
+  color: #666666;
   border: 1px solid #cccccc;
+  background-color: #ffffff;
 }
 .arg .left {
   border-right: 1px solid #cccccc;
@@ -43,6 +44,7 @@ body {
   width: 685px;
 }
 .arg .right h2 {
+  color: #000000;
   font-size: 16px;
   font-weight: bolder;
   line-height: 1.5;
@@ -54,29 +56,54 @@ body {
 }
 .arg .right .change {
   background: url("../img/detailed/label.png") center center;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  width: 54px;
+  height: 18px;
+  text-indent: 14px;
+  margin-right: 6px;
+}
+.arg .right .tit {
+  padding-left: 20px;
+  display: inline-block;
+  width: 60px;
 }
 .arg .right .choice {
   background-color: #f2f2f2;
-  color: #666666;
-  margin: 0 12px 0 12px;
+  margin: 12px 12px 0 12px;
   padding: 20px 0 20px 12px;
 }
 .arg .right .choice li {
-  padding-bottom: 14px;
+  padding-bottom: 24px;
+}
+.arg .right .choice .tit {
+  padding-left: 0px;
+  display: inline-block;
+  width: 60px;
 }
 .arg .right .choice select {
   border: 1px solid #cccccc;
+  background-color: #ffffff;
 }
 .arg .right .choice .color span {
   text-align: center;
   padding: 8px 25px;
-  border: 1px solid #317ee7;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
   color: #000000;
   margin-right: 12px;
 }
 .arg .right .choice .specification span {
-  border: 1px solid #317ee7;
+  padding: 6px 4px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
   margin-right: 12px;
+}
+.arg .right .choice .color .select,
+.arg .right .choice .specification .select {
+  border: 1px solid #0479ca;
+  background-color: #ffffff;
 }
 .arg .right .choice .count {
   color: #fe8900;
