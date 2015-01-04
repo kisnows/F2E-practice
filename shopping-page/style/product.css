@@ -1,2 +1,84 @@
 @charset "utf-8";
+body {
+  background-color: #ffffff;
+}
+#content {
+  width: 1000px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin: 22px auto 0px;
+}
+.bar {
+  overflow: hidden;
+  padding-bottom: 8px;
+}
+.bar li {
+  float: left;
+  padding-right: 4px;
+}
+.arg {
+  background-color: #ffffff;
+  height: 592px;
+  border: 1px solid #cccccc;
+}
+.arg .left {
+  border-right: 1px solid #cccccc;
+  float: left;
+  width: 312px;
+  height: 592px;
+}
+.arg .left img {
+  padding: 18px 56px;
+}
+.arg .left ul {
+  padding-left: 23px;
+}
+.arg .left li,
+.arg .left li img {
+  padding: 0;
+  float: left;
+}
+.arg .right {
+  float: right;
+  width: 685px;
+}
+.arg .right h2 {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.5;
+  padding: 26px 0px 10px 24px;
+}
+.arg .right .price {
+  color: #d70000;
+  font-size: 22px;
+}
+.arg .right .change {
+  background: url("../img/detailed/label.png") center center;
+}
+.arg .right .choice {
+  background-color: #f2f2f2;
+  color: #666666;
+  margin: 0 12px 0 12px;
+  padding: 20px 0 20px 12px;
+}
+.arg .right .choice li {
+  padding-bottom: 14px;
+}
+.arg .right .choice select {
+  border: 1px solid #cccccc;
+}
+.arg .right .choice .color span {
+  text-align: center;
+  padding: 8px 25px;
+  border: 1px solid #317ee7;
+  color: #000000;
+  margin-right: 12px;
+}
+.arg .right .choice .specification span {
+  border: 1px solid #317ee7;
+  margin-right: 12px;
+}
+.arg .right .choice .count {
+  color: #fe8900;
+}
 /*# sourceMappingURL=product.css.map */

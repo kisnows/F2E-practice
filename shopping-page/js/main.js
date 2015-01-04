@@ -144,9 +144,9 @@ shop.app.smallBanner = function() {
 		};
 		shop.ui.fadeIn(imgs[iNow]);
 		// imgs[iNow].style.display = 'block';
-		iNow ++;
-		if(iNow >= imgs.length){
-			iNow =0;
+		iNow++;
+		if (iNow >= imgs.length) {
+			iNow = 0;
 		}
 	}, 3000)
 	console.log(sBanner, imgs, iNow, timer);
