@@ -48,7 +48,7 @@ body {
   font-size: 16px;
   font-weight: bolder;
   line-height: 1.5;
-  padding: 26px 0px 10px 24px;
+  padding: 20px 0px 6px 24px;
 }
 .arg .right .price {
   color: #d70000;
@@ -66,21 +66,26 @@ body {
 }
 .arg .right .tit {
   padding-left: 20px;
+  padding-right: 5px;
   display: inline-block;
   width: 60px;
+  height: 35px;
 }
 .arg .right .choice {
+  height: 200px;
   background-color: #f2f2f2;
-  margin: 12px 12px 0 12px;
-  padding: 20px 0 20px 12px;
+  margin: 0px 12px 0 12px;
+  padding: 20px 100px 20px 12px;
 }
 .arg .right .choice li {
-  padding-bottom: 24px;
+  padding: 10px 0;
 }
 .arg .right .choice .tit {
   padding-left: 0px;
+  padding-right: 5px;
   display: inline-block;
   width: 60px;
+  height: 35px;
 }
 .arg .right .choice select {
   border: 1px solid #cccccc;
@@ -107,5 +112,37 @@ body {
 }
 .arg .right .choice .count {
   color: #fe8900;
+  font-weight: bolder;
+}
+.arg .right .choice .num {
+  margin: 0 6px;
+  padding: 6px 20px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.arg .right .sel {
+  margin: 20px 0 30px 0;
+}
+.arg .right .chose {
+  margin: 20px 0;
+  color: #0479ca;
+  font-weight: bolder;
+}
+.arg .right .shop {
+  margin: 0;
+}
+.arg .right input {
+  border: 1px solid #fe8900;
+  background-color: #ffffff;
+  width: 184px;
+  height: 48px;
+  margin: 0 40px 40px 40px;
+  background-color: #fe8900;
+  color: #ffffff;
+  font-size: 20px;
+  text-indent: 2em;
+}
+.arg .right .not {
+  color: #999999;
 }
 /*# sourceMappingURL=product.css.map */
