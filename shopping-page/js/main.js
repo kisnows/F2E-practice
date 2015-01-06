@@ -111,7 +111,15 @@ shop.app.banner = function() {
 		imgs[i].onmouseover = function() { //鼠标移入，清楚定时器
 			clearInterval(timer);
 		}
+		nums[i].onmouseover = function() { //鼠标移入，清楚定时器
+			clearInterval(timer);
+		}
 		imgs[i].onmouseout = function() { //鼠标移出，继续自动播放
+			clearInterval(timer);
+			timer = setInterval(auto, 2000);
+		}
+		nums[i].onmouseout = function() { //鼠标移出，继续自动播放
+			clearInterval(timer);
 			timer = setInterval(auto, 2000);
 		}
 		nums[i].onclick = function() {
