@@ -1,0 +1,223 @@
+.title_font {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+}
+#content {
+  margin-top: 20px;
+}
+.screen_l {
+  width: 188px;
+  margin-right: 10px;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  color: #555555;
+}
+.screen_l h3 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+  border-bottom: 1px solid #cdcdcd;
+  text-align: center;
+}
+.screen_l .item_screen {
+  border-bottom: 1px dotted #cdcdcd;
+  padding-bottom: 8px;
+}
+.screen_l .item_screen h4 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.screen_l .item_screen a {
+  display: block;
+  margin-left: 18px;
+  color: #555555;
+  line-height: 20px;
+}
+.screen_l .item_bot {
+  background-color: #fefefe;
+}
+.screen_l .item_bot p {
+  position: relative;
+  height: 58px;
+  padding: 10px 0;
+}
+.screen_l .item_bot img {
+  width: 40px;
+  height: 62px;
+  float: left;
+  margin-left: 22px;
+}
+.screen_l .item_bot span {
+  float: right;
+  margin-right: 22px;
+  display: inline-block;
+  width: 84px;
+}
+.screen_l .item_bot .bot_pri {
+  color: #000;
+}
+.screen_r {
+  width: 800px;
+}
+.screen_r .top {
+  margin-top: 12px;
+  font-size: 14px;
+}
+.screen_r .top dl {
+  border-bottom: 1px solid #cdcdcd;
+  overflow: hidden;
+  line-height: 32px;
+}
+.screen_r .top dl a {
+  color: #085c9b;
+}
+.screen_r .top dl .active {
+  padding: 2px;
+  background-color: #085c9b;
+  color: #fff;
+}
+.screen_r .top dt {
+  width: 78px;
+  float: left;
+  text-align: right;
+}
+.screen_r .top dd {
+  float: left;
+}
+.screen_r .top .nocare {
+  width: 64px;
+  text-align: right;
+  margin-right: 26px;
+}
+.screen_r .top .ite {
+  overflow: hidden;
+  width: 522px;
+}
+.screen_r .top .ite li {
+  width: 25%;
+  float: left;
+}
+.screen_r .top .more {
+  padding-right: 15px;
+  background: url(../img/arrow1.png) right center no-repeat;
+}
+.screen_r .top .more a {
+  color: #000;
+}
+.screen_r .top .la {
+  padding: 10px 0px;
+}
+.screen_r .top .la dt {
+  margin-right: 20px;
+}
+.screen_r .top .la dd {
+  margin-left: 20px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 15px;
+  border: 1px solid #cdcdcd;
+  background: #ffffff url(../img/arrow1.png) 98% center no-repeat;
+}
+.screen_r .bottom {
+  width: 800px;
+  margin-top: 15px;
+}
+.screen_r .bottom .pros {
+  width: 100%;
+}
+.screen_r .bottom .add {
+  width: 800px;
+  height: 22px;
+  line-height: 22px;
+  padding: 4px 0;
+  background-color: #f3f3f3;
+  border: 1px solid #cdcdcd;
+  border-left: none;
+}
+.screen_r .bottom .add span {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.screen_r .bottom .add .check {
+  border: 1px solid #cdcdcd;
+  width: 110px;
+  height: 22px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background: #ffffff url(../img/arrow1.png) 95% center no-repeat;
+}
+.screen_r .bottom .add .check ul {
+  width: 110px;
+  height: auto;
+  float: left;
+  position: absolute;
+  border: 1px solid #cdcdcd;
+  top: 22px;
+  background-color: #f3f3f3;
+  display: none;
+}
+.screen_r .bottom .add .check ul li {
+  float: none;
+  width: 99%;
+  height: 22px;
+  padding: 0px;
+}
+.screen_r .bottom .add .check ul .active {
+  background-color: #085c9b;
+}
+.screen_r .bottom .add .right {
+  width: auto;
+  margin-right: 30px;
+}
+.screen_r .bottom .add .right #addre {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.screen_r .bottom .add .right label {
+  margin-right: 10px;
+}
+.screen_r .bottom .add .right em {
+  font-style: normal;
+  font-weight: bolder;
+  color: red;
+}
+.screen_r .page {
+  width: 100%;
+  padding: 22px 0px;
+  text-align: center;
+  border-bottom: 1px solid #cdcdcd;
+  line-height: 22px;
+}
+.screen_r .page a {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+  height: 22px;
+  padding: 0 8px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  color: #000000;
+}
+.screen_r .page .active {
+  color: #ff0000;
+}
+.screen_r .page input {
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  background-color: #e8e8e8;
+}

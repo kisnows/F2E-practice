@@ -1,0 +1,223 @@
+@bgcolor: #f3f3f3;
+@bodcolor: #cdcdcd;
+@pricecolor: #d4105a;
+@bluecolor: #085c9b;
+@fontcolor: #555555;
+.title_font{
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+	padding: 10px 0;
+}
+#content{
+	margin-top: 20px;
+}
+.screen_l{
+	width: 188px;
+	margin-right: 10px;
+	border: 1px solid @bodcolor;
+	overflow: hidden;
+	background-color: @bgcolor;
+	color: @fontcolor;
+	h3{
+		.title_font;
+		border-bottom: 1px solid @bodcolor;
+		text-align: center;
+	}
+	.item_screen{
+		border-bottom: 1px dotted @bodcolor;
+		padding-bottom: 8px;
+		h4{
+			.title_font;
+			font-size: 12px;
+			margin-left: 6px;
+		}
+		a{
+			display: block;
+			margin-left: 18px;
+			color: @fontcolor;
+			line-height: 20px;
+		}
+	}
+	.item_bot{
+		background-color: #fefefe;
+		p{
+			position: relative;
+			height: 58px;
+			padding: 10px 0;
+		}
+		img{
+			width: 40px;
+			height: 62px;
+			// position: absolute;
+			// top: 8px;
+			// left: 22px;
+			float: left;
+			margin-left: 22px;
+		}
+		span{
+			float: right;
+			margin-right: 22px;
+			display: inline-block;
+			width: 84px;
+		}
+		.bot_pri{
+			color: #000;
+		}
+	}
+}
+
+.screen_r{
+	width: 1000-200px;
+	.top{
+		margin-top: 12px;
+		font-size: 14px;
+		dl{
+			border-bottom: 1px solid @bodcolor;
+			overflow: hidden;
+			line-height: 32px;
+			a{
+				color: @bluecolor;
+			}
+			.active{
+				padding:2px;
+				background-color: @bluecolor;
+				color: #fff;
+			}
+		}
+		dt{
+			width: 78px;
+			float: left;
+			text-align: right;
+		}
+		dd{
+			float: left;
+		}
+		.nocare{
+			width: 64px;
+			text-align: right;
+			margin-right: 26px;
+		}
+		.ite {
+			overflow: hidden;
+			width: 522px;
+		}
+		.ite li{
+			width: 25%;
+			float: left;
+		}
+		.more{
+			padding-right: 15px;
+			background: url(../img/arrow1.png) right center no-repeat;
+			a{color: #000;}
+		}
+		.la{
+			padding: 10px 0px;
+			dt{
+				margin-right: 20px;
+			}
+			dd{
+				margin-left: 20px;
+				height: 30px;
+				line-height: 30px;
+				padding: 0px 15px;
+				border: 1px solid @bodcolor;
+				background: #fff url(../img/arrow1.png) 98% center no-repeat;
+			}
+		}
+	}
+	.bottom{
+		width: 800px;
+		margin-top: 15px;
+		.pros{width: 100%;}
+		.add{
+			width: 800px;
+			height: 22px;
+			line-height: 22px;
+			padding: 4px 0;
+			background-color: @bgcolor;
+			border: 1px solid @bodcolor;
+			border-left: none;
+			span{
+			float: left;
+			margin-left: 10px;
+			margin-right: 10px;
+			vertical-align: top;
+			}
+			.check{
+				border: 1px solid @bodcolor;
+				width: 110px;
+				height: 22px;
+				position: relative;
+				display: inline-block;
+				text-align: center;
+				background: #fff url(../img/arrow1.png) 95% center no-repeat;
+				ul{
+					width: 110px;
+					height: auto;
+					float: left;
+					position: absolute;
+					border: 1px solid @bodcolor;
+					top: 22px;
+					background-color: @bgcolor;
+					display: none;
+					li{
+						float: none;
+						width: 100%-1;
+						height: 22px;
+						padding: 0px;
+					}
+					.active{
+						background-color: @bluecolor;
+					}
+				}
+			}
+			.right{
+				width: auto;
+				margin-right: 30px;
+				#addre{
+					vertical-align: middle;
+					margin-right: 2px;
+				}
+				label{
+					margin-right: 10px;
+				}
+				em{
+					font-style: normal;
+					font-weight: bolder;
+					color: red;
+				}
+			}
+		}
+	}
+	.page{
+		width: 100%;
+		padding: 22px 0px;
+		text-align: center;
+		border-bottom: 1px solid @bodcolor;
+		.border(@color: @bodcolor){
+			border:1px solid @color;
+			background-color: #ffffff;
+		}
+		// margin: 32px 0px 32px 268px;
+		line-height: 22px;
+		a{
+			display: inline-block;
+			vertical-align: top;
+			zoom: 1; /* Fix for IE7 */
+			*display: inline; /* Fix for IE7 */
+			height: 22px;
+			padding: 0 8px;
+			.border;
+			color: #000000;
+		}
+		.active{
+			color: #ff0000;
+		}
+		input{
+			.border;
+			padding: 4px 8px;
+			background-color: #e8e8e8;
+		}
+	}
+}
