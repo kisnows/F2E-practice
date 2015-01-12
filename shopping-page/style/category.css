@@ -1,0 +1,97 @@
+.title_font {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+}
+#content {
+  margin-top: 20px;
+}
+#goods {
+  width: 182px;
+  margin-right: 2px;
+  background-color: #f3f3f3;
+  border: 1px solid #cdcdcd;
+}
+#goods h3 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+  border-bottom: 1px solid #cdcdcd;
+  text-align: center;
+}
+#goods .item_cate {
+  border-bottom: 1px dotted #cdcdcd;
+}
+#goods .item_cate h4 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+  font-size: 12px;
+  text-indent: 20px;
+}
+#goods .item_cate a {
+  display: inline-block;
+  margin: 6px 20px;
+  color: #555555;
+}
+.right {
+  width: 812px;
+}
+.pros {
+  width: 812px;
+  overflow: hidden;
+}
+.pros h3 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  padding: 10px 0;
+  padding: 0px;
+  line-height: 40px;
+  text-indent: 1em;
+  border-bottom: 2px solid #cdcdcd;
+  margin-bottom: 2px;
+  position: relative;
+}
+.pros .bo {
+  display: inline-block;
+  width: 200px;
+  border-bottom: 2px solid #085c9b;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.pros ul {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.pros li {
+  float: left;
+  width: 182px;
+  height: 277px;
+  overflow: hidden;
+  padding: 0 8px;
+}
+.pros li a {
+  display: block;
+  text-align: center;
+  color: #555555;
+}
+.pros li .price {
+  color: #d4105a;
+  font-weight: bodler;
+}
+.pros li .comment span {
+  display: inline-block;
+  width: 79px;
+  height: 18px;
+  vertical-align: middle;
+  background-image: url(../img/detailed/star.png);
+}
+.pros li .comment a {
+  color: #085c9b;
+}

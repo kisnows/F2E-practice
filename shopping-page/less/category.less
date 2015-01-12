@@ -1,0 +1,94 @@
+@bgcolor: #f3f3f3;
+@bodcolor: #cdcdcd;
+@pricecolor: #d4105a;
+@bluecolor: #085c9b;
+@fontcolor: #555555;
+.title_font{
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+	padding: 10px 0;
+}
+#content{
+	margin-top: 20px;
+}
+#goods{
+	width: 182px;
+	margin-right: 2px;
+	// text-align: center;
+	background-color: @bgcolor;
+	border: 1px solid @bodcolor;
+	h3{
+		.title_font;
+		border-bottom: 1px solid @bodcolor;
+		text-align: center;
+	}
+	.item_cate{
+		border-bottom: 1px dotted @bodcolor;
+		h4{
+			.title_font;
+			font-size: 12px;
+			text-indent: 20px;
+		}
+		a{
+			display: inline-block;
+			margin: 6px 20px;
+			color: @fontcolor;
+		}
+	}
+}
+.right{
+	width: 812px;
+}
+.pros{
+	width: 812px;
+	overflow: hidden;
+	h3{
+		.title_font;
+		padding: 0px;
+		line-height: 40px;
+		text-indent: 1em;
+		border-bottom: 2px solid @bodcolor;
+		margin-bottom: 2px;
+		position: relative;
+	}
+	.bo{
+		display: inline-block;
+		width: 200px;
+		border-bottom: 2px solid @bluecolor;
+		position: absolute;
+		left: 0;
+		top: 40px;
+	}
+	ul{
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+	}
+	li{
+		float: left;
+		width: 182px;
+		height: 277px;
+		overflow: hidden;
+		padding: 0 8px;
+		a{
+			display: block;
+			text-align: center;
+			color: @fontcolor;
+		}
+		.price{
+			color: @pricecolor;
+			font-weight: bodler;
+		}
+		.comment span{
+			display: inline-block;
+			width: 79px;
+			height: 18px;
+			vertical-align: middle;
+			background-image: url(../img/detailed/star.png);
+		}
+		.comment a{
+			color: @bluecolor;
+		}
+	}
+}

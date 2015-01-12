@@ -1,0 +1,149 @@
+*{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style-type: none;
+}
+body{
+	font-family: monospace;
+	font-size: 12px;
+	line-height: 1.7;
+	width:1000px;
+	margin:0 auto;
+}
+#head{
+	height:80px;
+}
+#head img{
+	float:left;
+}
+#head li{
+	float: left;
+}
+#head a{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	width:80px;
+	padding:25px 10px;
+}
+#head a:link,#head a:visited{
+	color:black;
+}
+#head a:hover,#head a:active{
+	background:rgb(189, 29, 71);
+}
+#banner{
+	height: 310px;
+	overflow: hidden;
+}
+#scroll{
+	padding-top: 10px;
+	overflow: hidden;
+}
+span{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	float: left;
+}
+.a{
+	width:10%;
+	background: rgb(189,29,71);
+	text-align: center;
+}
+.b{
+	width:90%;
+	background: rgb(62, 62, 62);
+	color:white;text-indent: 1em;
+}
+#scroll li{
+	float:left;
+	margin:10px 0px;
+	margin-right: 5px;
+}
+#scroll .last-img{
+	margin-right: 0;
+}
+#scroll a{
+	text-decoration: none;
+	color:black;
+	text-align: center
+}
+#scroll p{
+	border: 1px solid #bab5b5;
+	border-top: none;
+	position:relative;
+	top:-7px;
+	font-weight: bolder;
+}
+#news{
+	overflow: hidden;
+}
+#news .news_left,
+#news .news_mid,
+#news .news_right{
+	float: left;
+	width:328px;
+	height:290px;
+	margin-right: 5px;
+	border: 1px solid #bea7a7;
+}
+#news .news_head{
+	height:40px;
+	line-height: 40px;
+	padding-left: 10px;
+	color:#fff;
+	background:rgb(189,29,71);
+}
+#news .news_row{
+	padding:6px 4px 4px;
+	overflow: hidden;
+	border-bottom: 1px solid #bea7a7;
+}
+#news .news_last{
+	border:none;
+}
+#news .news_left .date{
+	float: left;
+	width:10%;
+	font-size: 14px;
+	color:#fff;
+	line-height: 1.5;
+	background: rgb(189,29,71);
+	border-radius: 5px;
+	padding:8px 10px;
+	margin: 4px;
+	margin-right: 10px;
+}
+#news .news_left h4{
+	padding-bottom: 10px;
+}
+#news .news_left p{
+	color:#3c3c3a
+}
+#news .news_mid img{
+	display: block;
+	margin:10px auto 0px;
+}
+#news .news_mid p{
+	margin-left: 14px;
+	line-height: 2.0;
+	font-weight: bold;
+}
+#news .news_right{
+	margin-right: 0;
+}
+#news .news_right ul{
+	margin: 5px 5px 20px;
+}
+#footer{
+	background: #bebbbb;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	margin-top: 4px;
+}

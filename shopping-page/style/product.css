@@ -1,0 +1,423 @@
+@charset "utf-8";
+body {
+  background-color: #f0f0f0;
+}
+#content {
+  width: 1000px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin: 22px auto 0px;
+}
+.bar {
+  overflow: hidden;
+  padding-bottom: 8px;
+  background-color: #f0f0f0;
+}
+.bar li {
+  float: left;
+  padding-right: 4px;
+}
+.arg {
+  height: 592px;
+  color: #666666;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.arg .left {
+  border-right: 1px solid #cccccc;
+  float: left;
+  width: 312px;
+  height: 592px;
+}
+.arg .left img {
+  padding: 18px 56px;
+}
+.arg .left ul {
+  padding-left: 23px;
+}
+.arg .left li,
+.arg .left li img {
+  padding: 0;
+  float: left;
+}
+.arg .right {
+  float: right;
+  width: 684px;
+}
+.arg .right h2 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.5;
+  padding: 20px 0px 6px 24px;
+}
+.arg .right .price {
+  color: #d70000;
+  font-size: 22px;
+}
+.arg .right .change {
+  background: url("../img/detailed/label.png") center center;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  width: 54px;
+  height: 18px;
+  text-indent: 14px;
+  margin-right: 6px;
+}
+.arg .right .tit {
+  padding-left: 20px;
+  padding-right: 5px;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+}
+.arg .right .choice {
+  height: 200px;
+  background-color: #f3f3f3;
+  margin: 0px 12px 0 12px;
+  padding: 20px 100px 20px 12px;
+}
+.arg .right .choice li {
+  padding: 10px 0;
+}
+.arg .right .choice .tit {
+  padding-left: 0px;
+  padding-right: 5px;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+}
+.arg .right .choice select {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.arg .right .choice .color span {
+  text-align: center;
+  padding: 8px 25px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.arg .right .choice .specification span {
+  padding: 6px 4px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.arg .right .choice .color .select,
+.arg .right .choice .specification .select {
+  border: 1px solid #0479ca;
+  background-color: #ffffff;
+}
+.arg .right .choice .count {
+  color: #fe8900;
+  font-weight: bolder;
+}
+.arg .right .choice .num {
+  margin: 0 6px;
+  padding: 6px 20px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.arg .right .sel {
+  margin: 20px 0 30px 0;
+}
+.arg .right .chose {
+  margin: 20px 0;
+  color: #0479ca;
+  font-weight: bolder;
+}
+.arg .right .shop {
+  margin: 0;
+}
+.arg .right .btn {
+  border: 1px solid #fe8900;
+  background-color: #ffffff;
+  display: inline-block;
+  width: 184px;
+  height: 48px;
+  margin: 0 40px 40px 40px;
+  background-color: #fe8900;
+  color: #ffffff;
+  font-size: 20px;
+  text-indent: 3.5em;
+  position: relative;
+  line-height: 48px;
+}
+.arg .right .shop_icon {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  background: url("../img/icon.png") 0 0 no-repeat;
+  left: 30px;
+  top: 14px;
+}
+.arg .right .not {
+  color: #999999;
+}
+.bottom .left {
+  width: 188px;
+  margin-right: 22px;
+  margin-top: 12px;
+}
+.bottom .left .same,
+.bottom .left .lastbuy {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.bottom .left .same h3,
+.bottom .left .lastbuy h3 {
+  font-size: 14px;
+  width: 186px;
+  height: 39px;
+  line-height: 39px;
+  text-indent: 1em;
+  border-bottom: 1px solid #cccccc;
+  background-color: #f3f3f3;
+}
+.bottom .left .same a,
+.bottom .left .lastbuy a {
+  display: block;
+  width: 160px;
+  height: 200px;
+  margin: 14px;
+  text-align: center;
+}
+.bottom .left .same a img,
+.bottom .left .lastbuy a img {
+  border: none;
+}
+.bottom .left .same a p,
+.bottom .left .lastbuy a p {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #999999;
+}
+.bottom .left .same a span,
+.bottom .left .lastbuy a span {
+  color: #de0000;
+}
+.bottom .right {
+  width: 784px;
+  margin-top: 12px;
+}
+.bottom .right .reviews {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+.bottom .right .reviews .tab {
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+}
+.bottom .right .reviews .tab h2 {
+  width: 389px;
+  height: 28px;
+  float: left;
+  position: relative;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+.bottom .right .reviews .tab h2 .icon {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  left: 30%;
+  top: 30%;
+}
+.bottom .right .reviews .tab h2 .i1 {
+  background: url("../img/detailed/introduction.png");
+}
+.bottom .right .reviews .tab h2 .i2 {
+  background: url("../img/detailed/valueation.png");
+}
+.bottom .right .reviews .tab .active {
+  background-color: #0479ca;
+  color: #ffffff;
+}
+.bottom .right .reviews .score {
+  position: relative;
+}
+.bottom .right .reviews .score h3 {
+  font-size: 14px;
+  colro: #666666;
+  margin: 10px 0 30px 10px;
+  width: 100%;
+}
+.bottom .right .reviews .score .scr {
+  width: 560px;
+  height: 88px;
+}
+.bottom .right .reviews .score .scr .num {
+  font-size: 50px;
+  line-height: 35px;
+  color: #ff8f00;
+  margin-left: 10px;
+  margin-right: 30px;
+  float: left;
+}
+.bottom .right .reviews .score .scr .feedback {
+  float: left;
+}
+.bottom .right .reviews .score .scr .feedback .bar {
+  display: inline-block;
+  width: 394px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 20px;
+  background-color: #bdbdbd;
+}
+.bottom .right .reviews .score .scr .feedback .bar span {
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 30px;
+}
+.bottom .right .reviews .score .scr .many {
+  display: block;
+  font-size: 12px;
+  color: #66667d;
+}
+.bottom .right .reviews .score .tip {
+  display: block;
+  width: 28px;
+  height: 14px;
+  background-color: #7f7f7f;
+  position: absolute;
+  top: 30px;
+  right: 240px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 14px;
+}
+.bottom .right .reviews .score .tip .triangle {
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  margin-right: 4px;
+  width: 0px;
+  height: 0px;
+  border: 4px solid transparent;
+  border-top-color: #7f7f7f;
+}
+.bottom .right .reviews .score .rev_bar {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+.bottom .right .reviews .score .rev_bar a {
+  margin: 0 20px;
+  width: auto;
+  color: #000000;
+}
+.bottom .right .reviews .score .rev_bar .right {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-top: 6px;
+  line-height: 1.4;
+  padding: 0px;
+  background-color: #f2f2f2;
+}
+.bottom .right .member {
+  padding: 20px 34px;
+  position: relative;
+}
+.bottom .right .member img {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+}
+.bottom .right .member .con {
+  position: absolute;
+  top: 26px;
+  left: 170px;
+  line-height: 30px;
+}
+.bottom .right .member .con .star {
+  display: inline-block;
+  width: 78px;
+  height: 20px;
+  background: #ffffff url('../img/detailed/star.png') 0 0 no-repeat;
+  position: relative;
+  top: 8px;
+  left: -4px;
+}
+.bottom .right .member .con a {
+  color: #085c9b;
+}
+.bottom .right .member .time {
+  position: absolute;
+  top: 26px;
+  right: 22px;
+  color: #ababab;
+}
+.bottom .right .page {
+  margin: 32px 0px 32px 268px;
+  line-height: 22px;
+}
+.bottom .right .page a {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+  height: 22px;
+  padding: 0 8px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+}
+.bottom .right .page .active {
+  color: #ff0000;
+}
+.bottom .right .consult {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.bottom .right .consult .consult_bar {
+  height: 34px;
+  margin-bottom: 10px;
+  line-height: 34px;
+  font-size: 14px;
+  color: 076ebb;
+  border-bottom: 1px solid #076ebb;
+}
+.bottom .right .consult .consult_bar a {
+  color: #076ebb;
+}
+.bottom .right .consult .consult_bar .all {
+  float: left;
+  display: block;
+  text-align: center;
+  width: 100px;
+  border: 1px solid #076ebb;
+  background-color: #ffffff;
+  border-bottom: none;
+  height: 35px;
+}
+.bottom .right .consult .consult_bar .post {
+  float: right;
+  padding-right: 20px;
+}
+.bottom .right .consult .tip {
+  margin: 0 20px;
+  padding: 8px;
+  background-color: #f3f3f3;
+}
+.bottom .right .consult .re {
+  width: 570px;
+  padding: 10px;
+  background-color: #f3f3f3;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo2</title>
+	<!-- http://img.mukewang.com/539a972b00013e9102280177.jpg -->
+	<style>
+		*{margin:0;padding:0;}
+		.content{
+			width:200px;
+			border:1px solid #d4d4d4;
+			background: #ebf2fa;
+			box-shadow: 0px 1px 1px #ccc;
+			padding: 20px 10px;
+		}
+		form{
+			width:190px;
+			margin:0 auto;
+			border-bottom: 1px solid #adb6c9
+		}
+		.input {
+			width:190px;
+			background: #fff url("http://a.xnimg.cn/n/apps/login/v6/cssimg/bg.png") 0 -76px no-repeat;
+			border:1px solid #adb6c9;
+			border-radius: 3px;
+			height: 30px;
+			margin: 20px 0px;
+		}
+		.input .email{
+			border:none;
+			background: transparent;
+			height:30px;
+			width:160px;
+			padding-left: 30px;
+			color:#ccc;
+		}
+		.btn{
+			background: none;
+			border:none;
+			background: url(http://img.mukewang.com/539a972b00013e9102280177.jpg);
+			width: 190px;
+			height: 38px;
+			text-indent: -9999em;
+			margin-bottom: 10px;
+			cursor:pointer;
+		}
+		.register{
+			width:190px;
+			margin:10px auto;
+		}
+		.reg{
+			background-position: 0 -38px;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<form post="get">
+		<dl class="input ">
+			<dd><input type="text" class="email" value="请输入邮箱" onfocus="if(value=='请输入邮箱') {value=''}" onblur="if (value=='') {value='请输入邮箱'}"></dd>
+		</dl>
+		<dl class="input ">
+			<dd><input type="text" class="email" value="请输入密码" onfocus="if(value=='请输入密码') {value=''}" onblur="if (value=='') {value='请输入密码'}"></dd>
+		</dl>
+		<dl>
+			<dd><input type="submit" class="btn login" value="登陆"></dd>
+		</dl>
+	</form>
+	<div class="register"><input type="button" class="btn reg" value="注册"></div>
+</div></body>
+</html>
