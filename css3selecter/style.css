@@ -20,7 +20,6 @@ z-index:1;
   -ms-transform: translateX(-50%);
 }
 /*设置背景图片从左向右移入显示的动画效果*/
-/* Slide Left */
 
 @-webkit-keyframes 'slideLeft' {
   0% { left: -500px; }
@@ -43,7 +42,6 @@ z-index:1;
   100% { left: 0; }
 }
 /*设置背景图像从底部向顶部移入的动画效果*/
- /* Slide Bottom */
 
 @-webkit-keyframes 'slideBottom' {
   0% { top: 350px; }
@@ -66,7 +64,6 @@ z-index:1;
   100% { top: 0; }
 }
 /*设置背景图片由小到大放大动画效果*/
-/* Zoom In */
 
 @-webkit-keyframes 'zoomIn' {
   0% { -webkit-transform: scale(0.1); }
@@ -89,7 +86,6 @@ z-index:1;
   100% { transform: none; }
 }
 /*设置背景图像由大到小缩小动画效果*/
-/* Zoom Out */
 
 @-webkit-keyframes 'zoomOut' {
   0% { -webkit-transform: scale(2); }
@@ -112,7 +108,6 @@ z-index:1;
   100% { transform: none; }
 }
 /*背景图像旋转出现动画效果*/
-/* Rotate */
 
 @-webkit-keyframes 'rotate' {
   0% { -webkit-transform: rotate(-360deg) scale(0.1); }
@@ -187,7 +182,7 @@ font-size: 22px;
 font-family: 'Yesteryear', cursive;
 text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.8),-2px -2px 1px rgba(0, 0, 0, 0.3),-3px -3px 1px rgba(0, 0, 0, 0.3);
 }
-/*任务一、设置不同列表的背景色*/
+/*设置不同列表的背景色*/
 .slider li:nth-child(1) a{
 background-color: #02646e;
 }
@@ -203,7 +198,7 @@ background-color: #e6674a;
 .slider li:nth-of-type(5) a{
 background-color: #e61061;
 }
-/*任务二、设置缩略图形状*/
+/*设置缩略图形状*/
 .slider a::after{
 content:"";
 display: block;
@@ -217,7 +212,7 @@ margin-left: -60px;
 z-index: 9999;
 top: -80px;
 }
-/*任务三、设置缩略图背景图像*/
+/*设置缩略图背景图像*/
 .slider li:nth-child(1) a::after{
 background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg1.jpg) no-repeat center;
 }
@@ -233,7 +228,7 @@ background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg4.jpg) no
 .slider li:nth-child(5) a::after{
 background: url(http://www.w3cplus.com/demo/css3/CSS3Fullbackground/sbg5.jpg) no-repeat center;
 }
-/*任务四、给缩略图添加蒙板效果*/
+/*给缩略图添加蒙板效果*/
 .slider a::before{
 content:"";
 display: block;
@@ -248,11 +243,11 @@ z-index: 99999;
 top: -80px;
 background: rgba(0,0,0,0.3);
 }
-/*任务五、鼠标悬浮时，修改缩略图蒙板透明度*/
+/*鼠标悬浮时，修改缩略图蒙板透明度*/
 .slider a:hover::before{
 opacity:0;
 }
-/*任务六、点击综略图，切换背景图*/
+
 /*背景图从左向右出现*/
 #bg1:target{
   z-index: 100;
@@ -351,8 +346,7 @@ opacity:0;
   animation-duration: 1s;
   animation-iteration-count: 1;
 }
-/*任务七、设置不显示的背景图层级*/
-/* Not Target */
+/*设置不显示的背景图层级*/
 
 .bg:not(:target){
   -webkit-animation-name: notTarget;
