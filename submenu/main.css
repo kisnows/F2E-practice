@@ -1,0 +1,160 @@
+@charset "utf！8";
+/*CSS Document*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+input,select,textarea {outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+li{list-style: none;}
+/*reset end*/
+.nav{
+	background-color: #E4393C;
+}
+.menu,.bigitem{
+	float: left;
+}
+.bigitem li{
+	float: left;
+}
+.bigitem li:hover{
+	background-color: #A40000;
+}
+.bigitem .active{
+	background-color: #A40000;
+}
+.nav h2 a{
+	display: block;
+	width: 85px;
+	height: 40px;
+	line-height: 40px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.menu{
+	/*width: 202px;*/
+}
+.menu h2:first-child{
+	width: 210px;
+	height: 40px;
+}
+.menu h2:first-child a{
+	width: 210px;
+	text-indent: 16px;
+	text-align: left;
+}
+.sub{
+	position: absolute;
+	width: 203px;
+	padding: 3px 3px 3px 0px;
+	border: 2px solid #E4393C;
+	border-top: none;
+	background-color: #FAFAFA;
+}
+.item{
+	font-size: 14px;
+	line-height: 26px;
+	padding-left: 14px;
+	border-top: 1px solid #FFFFFF;
+
+	background: url(20130330A_2.png) no-repeat right center;
+}
+.item a{
+	color: #000000;
+}
+.item:hover{
+	box-shadow: 0 0 4px #C0C0C0;
+	background-color: #FFFFFF;
+}
+.item:hover .submenu{
+	display: block;
+}
+.item:hover span{
+	display: block;
+	position: relative;
+	float: right;
+	background-color: #FFFFFF;
+	width: 10px;
+	height: 26px;
+	z-index: 5;
+}
+
+.submenu{
+	position: absolute;
+	z-index: 3;
+	left: 203px;
+	top: 3px;
+	width: 705px;
+	padding:10px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 4px #C0C0C0;
+	display: none;
+}
+.subleft{
+	width: 480px;
+	float: left;
+}
+.subleft a{
+	font-size: 12px;
+}
+.subleft dl{
+	display: block;
+	border-bottom: 1px solid #EEEEEE;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	overflow: hidden;
+}
+.subleft dl:first-child{
+	padding-top: 0;
+}
+.subleft dl:last-child{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.subleft dt{
+	display: block;
+	width: 60px;
+	text-align: right;
+	float: left;
+	padding-right: 4px;
+}
+.subleft dt a{
+	color: #E4393C;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.subleft dd{
+	display: block;
+	overflow: hidden;
+}
+.subleft dd a{
+	border-left: 1px solid #C0C0C0;
+	padding: 0 6px;
+	color: #808080;
+}
+.subleft dd a:hover{
+	text-decoration: underline;
+	color: #E4393C;
+}
+
+.subright{
+	width: 210px;
+	float: right;
+}
+.subright dl{
+	margin-top: 10px;
+}
+.subright dt a{
+	font-size: 14px;
+	font-weight: bolder;
+	color: #E4393C;
+	text-decoration: underline;
+}
+.subright dd a{
+	font-size: 12px;
+	line-height: 22px;
+	color: #808080;
+	display: block;
+}
