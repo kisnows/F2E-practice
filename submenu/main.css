@@ -22,6 +22,7 @@ li{list-style: none;}
 .bigitem li:hover{
 	background-color: #A40000;
 }
+
 .bigitem .active{
 	background-color: #A40000;
 }
@@ -63,6 +64,11 @@ li{list-style: none;}
 }
 .item a{
 	color: #000000;
+}
+.item .title:hover{
+	color: #E4393C;
+	font-weight: bolder;
+	text-decoration: underline;
 }
 .item:hover{
 	box-shadow: 0 0 4px #C0C0C0;
