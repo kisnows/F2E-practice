@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pevent</title>
+    <style>
+    /*    	html{
+    		height: 100%;
+    	}
+    	body{
+    		height: 100%;
+    	}*/
+
+    a {
+    	display: block;
+    	background-color: orange;
+    	text-decoration: none;
+    	text-align: center;
+    	line-height: 30px;
+    	color: white;
+        width: 50px;
+        height: 30px;
+    }
+    p{
+    	border: 1px solid gray;
+    	        float: left;
+    }
+    .shadow {
+        width: 30%;
+        height: 40%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -15%;
+        margin-top: -10%;
+        background-color: rgb(39, 190, 88);
+        z-index: 4;
+        display: none;
+    }
+    i{
+        font-style: normal;
+        font-size: 6px;
+        position: relative;
+        bottom: 1ex;
+    }
+    </style>
+    <script>
+    window.onload = function() {
+        var a = document.getElementsByTagName('a')[0];
+        var shadow = document.getElementsByTagName('div')[0];
+        a.onclick = function(ev) {
+        	var e = ev || window.event;
+            shadow.style.display = 'block';
+            e.stopPropagation();
+            // e.cancelBubble = true;
+        };
+        shadow.onclick =function(ev){
+        	var e =ev || window.event;
+        	e.cancelBubble = true;
+        };
+        document.onclick = function(){
+        	shadow.style.display = 'none';
+        };
+    };
+    </script>
+</head>
+
+<body>
+    <a href="javascript:;">点击<i>TM</i></a>
+    <p>阻止事件冒泡演示</p>
+    <div class="shadow">我是弹出层，点击其他地方就会消失</div>
+
+</body>
+
+</html>
