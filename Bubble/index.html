@@ -26,7 +26,7 @@
     	border: 1px solid gray;
     	        float: left;
     }
-    .shadow {
+    .tip {
         width: 30%;
         height: 40%;
         position: fixed;
@@ -48,19 +48,19 @@
     <script>
     window.onload = function() {
         var a = document.getElementsByTagName('a')[0];
-        var shadow = document.getElementsByTagName('div')[0];
+        var tip = document.getElementsByTagName('div')[0];
         a.onclick = function(ev) {
         	var e = ev || window.event;
-            shadow.style.display = 'block';
+            tip.style.display = 'block';
             e.stopPropagation();
             // e.cancelBubble = true;
         };
-        shadow.onclick =function(ev){
+        tip.onclick =function(ev){
         	var e =ev || window.event;
         	e.cancelBubble = true;
         };
         document.onclick = function(){
-        	shadow.style.display = 'none';
+        	tip.style.display = 'none';
         };
     };
     </script>
@@ -69,7 +69,7 @@
 <body>
     <a href="javascript:;">点击<i>TM</i></a>
     <p>阻止事件冒泡演示</p>
-    <div class="shadow">我是弹出层，点击其他地方就会消失</div>
+    <div class="tip">我是弹出层，点击其他地方就会消失</div>
 
 </body>
 
