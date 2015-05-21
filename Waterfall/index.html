@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>瀑布流</title>
+    <style>
+    html,
+    body {
+        background-color: #ccc;
+        padding: 0;
+        margin: 0;
+    }
+
+    #war {
+        margin: 0 auto;
+    }
+
+    .img {
+        width: 210px;
+        /*实际宽度220px*/
+
+        float: left;
+        padding: 5px;
+    }
+
+    .img img {
+        width: 200px;
+        background: #fff;
+        padding: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="war">
+        <div class="img"><img src="./img/img/img1.jpg" /></div>
+        <div class="img"><img src="./img/img/img2.jpg" /></div>
+        <div class="img"><img src="./img/img/img3.jpg" /></div>
+        <div class="img"><img src="./img/img/img4.jpg" /></div>
+        <div class="img"><img src="./img/img/img5.jpg" /></div>
+        <div class="img"><img src="./img/img/img6.jpg" /></div>
+        <div class="img"><img src="./img/img/img7.jpg" /></div>
+        <div class="img"><img src="./img/img/img8.jpg" /></div>
+        <div class="img"><img src="./img/img/img9.jpg" /></div>
+        <div class="img"><img src="./img/img/img10.jpg" /></div>
+        <div class="img"><img src="./img/img/img11.jpg" /></div>
+        <div class="img"><img src="./img/img/img12.jpg" /></div>
+        <div class="img"><img src="./img/img/img13.jpg" /></div>
+        <div class="img"><img src="./img/img/img14.jpg" /></div>
+        <div class="img"><img src="./img/img/img15.jpg" /></div>
+        <div class="img"><img src="./img/img/img16.jpg" /></div>
+        <div class="img"><img src="./img/img/img17.jpg" /></div>
+        <div class="img"><img src="./img/img/img18.jpg" /></div>
+        <div class="img"><img src="./img/img/img19.jpg" /></div>
+        <div class="img"><img src="./img/img/img20.jpg" /></div>
+        <div class="img"><img src="./img/img/img21.jpg" /></div>
+        <div class="img"><img src="./img/img/img22.jpg" /></div>
+        <div class="img"><img src="./img/img/img23.jpg" /></div>
+        <div class="img"><img src="./img/img/img24.jpg" /></div>
+        <div class="img"><img src="./img/img/img25.jpg" /></div>
+        <div class="img"><img src="./img/img/img26.jpg" /></div>
+        <div class="img"><img src="./img/img/img27.jpg" /></div>
+        <div class="img"><img src="./img/img/img28.jpg" /></div>
+        <div class="img"><img src="./img/img/img29.jpg" /></div>
+        <div class="img"><img src="./img/img/img30.jpg" /></div>
+        <div class="img"><img src="./img/img/img31.jpg" /></div>
+        <div class="img"><img src="./img/img/img32.jpg" /></div>
+        <div class="img"><img src="./img/img/img33.jpg" /></div>
+        <div class="img"><img src="./img/img/img34.jpg" /></div>
+        <div class="img"><img src="./img/img/img35.jpg" /></div>
+        <div class="img"><img src="./img/img/img36.jpg" /></div>
+        <div class="img"><img src="./img/img/img37.jpg" /></div>
+        <div class="img"><img src="./img/img/img38.jpg" /></div>
+        <div class="img"><img src="./img/img/img39.jpg" /></div>
+        <div class="img"><img src="./img/img/img40.jpg" /></div>
+    </div>
+    <script>
+    window.onload = function() {
+        var oImg = document.getElementsByClassName('img');
+        var oWar = document.getElementById('war');
+
+        set(oWar, oImg);
+    };
+
+    //瀑布流设置
+    var set = function(war, box) {
+        war.style.position = 'relative';
+
+        var nCount = parseInt(getWinSize().w / 220);
+
+        war.style.width = nCount * 220 + 'px';
+        var aHeight = getColHeight(box, nCount);
+
+        for (var i = nCount; i < box.length; i++) {
+            var nMinHeight = Math.min.apply(null, aHeight);
+            var nColumn = getColumn(aHeight, nMinHeight);
+
+            box[i].style.position = 'absolute';
+            box[i].style.left = nColumn * 220 + 'px';
+            box[i].style.top = nMinHeight + 'px';
+            aHeight[nColumn] = nMinHeight * 1 + box[i].offsetHeight;
+        }
+    };
+
+    //寻找高度对应的列
+    var getColumn = function(arr, height) {
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[j] == height)
+                return j;
+        }
+    };
+
+    //获取第一行每列高度
+    var getColHeight = function(element, num) {
+        var aHeightArr = [];
+        for (var i = 0; i < num; i++) {
+            aHeightArr.push(element[i].offsetHeight);
+        }
+        return aHeightArr;
+    };
+
+    //获取节点大小
+    var getNodeSize = function(element) {
+        return {
+            w: element.offsetWidth,
+            h: element.offsetHeight
+        };
+    };
+
+    //获取窗口大小
+    var getWinSize = function(w) {
+        var w = w || window;
+        if (w.innerWidth != null)
+            return {
+                w: w.innerWidth,
+                h: w.innerHeight
+            };
+
+        var d = w.document;
+        if (document.compatMode == 'CSS1compat')
+            return {
+                w: d.documentElement.clientWidth,
+                h: d.documentElement.clientHeight
+            };
+
+        return {
+            w: d.body.clientWidth,
+            h: d.body.clientHeight
+        };
+    };
+    </script>
+</body>
+
+</html>
