@@ -4,8 +4,7 @@ require.config({
 		Framework7: 'libs/framework7',
 		text: 'libs/text',
 		GS: 'services/globalService',
-		tpl: '../tpl',
-		echarts: 'libs/echart'
+		tpl: '../tpl'
 	},
 	shim: {
 		Framework7: {
