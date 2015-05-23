@@ -2,87 +2,176 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Run</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>RUN</title>
+  <link rel="stylesheet" href="css/framework7.min.css">
+  <link rel="stylesheet" href="css/framework7.themes.min.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <div class="page-content plan">
-        <div class="init">
-            <div class="sign">
+  <div class="views tabs">
+    <div class="view tab active view-main" id="home">
+      <div class="pages toolbar-through navbar-through">
+        <div data-page="plan" class="page no-navbar">
+          <div class="page-content plan">
+            <div class="init">
+              <div class="sign">
                 <span class="sign-number1 number">1000</span>
                 <span class="sign-number2 number">10000</span>
-            </div>
-            <div class="dialog-sign">
+              </div>
+              <div class="dialog-sign">
                 <div class="dialog-item">
-                    <div class="dialog-title">每月投资计划</div>
-                    <div class="dialog-many">
-                        <span class="dialog-smbtn  dialog-btn smbtn-minus"></span>
-                        <span class="dialog-operation"><strong class='number'>10000</strong>元</span>
-                        <span class="dialog-smbtn  dialog-btn smbtn-add"></span>
-                    </div>
+                  <div class="dialog-title">每月投资计划</div>
+                  <div class="dialog-many">
+                    <span class="dialog-smbtn  dialog-btn smbtn-minus"></span>
+                    <span class="dialog-operation"><strong class='number'>10000</strong>元</span>
+                    <span class="dialog-smbtn  dialog-btn smbtn-add"></span>
+                  </div>
                 </div>
                 <div class="dialog-item">
-                    <div class="dialog-title">每月投资计划</div>
-                    <div class="dialog-many">
-                        <span class="dialog-smbtn dialog-btn smbtn-minus"></span>
-                        <span class="dialog-operation"><strong class='number'>10000</strong>元</span>
-                        <span class="dialog-smbtn dialog-btn smbtn-add"></span>
-                    </div>
+                  <div class="dialog-title">每月投资计划</div>
+                  <div class="dialog-many">
+                    <span class="dialog-smbtn dialog-btn smbtn-minus"></span>
+                    <span class="dialog-operation"><strong class='number'>10000</strong>元</span>
+                    <span class="dialog-smbtn dialog-btn smbtn-add"></span>
+                  </div>
                 </div>
                 <div class="row bottom">
-                    <div class="col-50 "><span class="dialog-btn btn-cancel"></span></div>
-                    <div class="col-50 "><span class="dialog-btn btn-enter"></span></div>
+                  <div class="col-50 "><span class="dialog-btn btn-cancel"></span></div>
+                  <div class="col-50 "><span class="dialog-btn btn-enter"></span></div>
                 </div>
+              </div>
+              <div class="go-btn"></div>
             </div>
-            <div class="go-btn"></div>
-        </div>
-        <div class="running">
-            <div class="runway">
+            <div class="running">
+              <div class="runway">
                 <div class="road-sign road-sign-top">
-                    <span class="years">30年后</span>
+                  <span class="years">30年后</span>
                 </div>
                 <div class="road-sign road-sign-middle">
-                    <span class="years">15年后</span>
+                  <span class="years">15年后</span>
                 </div>
                 <div class="road-sign road-sign-bottom">
-                    <span class="years">5年后</span>
+                  <span class="years">5年后</span>
                 </div>
-                <div class="line"></div>
-                <div class="line1"></div>
-                <div class="line2"></div>
                 <div class="person"></div>
                 <div class="person1"></div>
-                <div class="person2"></div>
-            </div>
-            <div class="cash-tip cash-sign1">
+              </div>
+              <div class="cash-tip cash-sign1">
                 <div class="title">5年后</div>
                 <div class="product"><span class="left">买产品</span><strong class="number">8.68万元</strong></div>
                 <div class="vs">VS</div>
                 <div class="bank"><span class="left">存银行</span><strong class="number">6.98万元</strong></div>
-            </div>
-            <div class="cash-tip cash-sign2">
+              </div>
+              <div class="cash-tip cash-sign2">
                 <div class="title">15年后</div>
                 <div class="product"><span class="left">买产品</span><strong class="number">38.68万元</strong></div>
                 <div class="vs">VS</div>
                 <div class="bank"><span class="left">存银行</span><strong class="number">19.98万元</strong></div>
-            </div>
-            <div id="cashTip" class="cash-tip cash-sign3">
+              </div>
+              <div id="cashTip" class="cash-tip cash-sign3">
                 <div class="title">30年后</div>
                 <div class="product"><span class="left">买产品</span><strong class="number">87.68万元</strong></div>
                 <div class="vs">VS</div>
                 <div class="bank"><span class="left">存银行</span><strong class="number">38.98万元</strong></div>
+              </div>
             </div>
-        </div>
-        <div class="once-again">
-            <img src="imgs/plan/bj.png" class="shine">
-            <div class="wrap">
+            <div class="once-again">
+              <img src="imgs/plan/bj.png" class="shine">
+              <div class="wrap">
                 <div class="top"></div>
                 <div class="top-btn">再来一次</div>
                 <div class="bottom-btn">分享</div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="view tab" id="wallet">
+    </div>
+    <div class="view tab" id="plan">
+
+    </div>
+    <div class="view tab" id="more">
+    </div>
+    <div class="toolbar tabbar tabbar-labels">
+      <div class="toolbar-inner">
+        <a href="#home" class="tab-link active">
+          <i class="iconfont">&#xe61a;</i>
+          <i class="toolbara toolbar-icon1 iconfont">&#xe61b;</i>
+          <span class="tabbar-label">首页</span>
+        </a>
+        <a href="#wallet" class="tab-link">
+          <i class="iconfont">&#xe61c;</i>
+          <i class="toolbara toolbar-icon2 iconfont">&#xe61d;</i>
+          <span class="tabbar-label">我的钱包</span>
+        </a>
+        <a href="#plan" class="tab-link">
+          <i class="iconfont">&#xe61e;</i>
+          <i class="toolbara toolbar-icon3 iconfont">&#xe61f;</i>
+          <span class="tabbar-label">投资计划</span>
+        </a>
+        <a href="#more" class="tab-link">
+          <i class="iconfont">&#xe620;</i>
+          <i class="toolbara toolbar-icon4 iconfont">&#xe621;</i>
+          <span class="tabbar-label">更多</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- build:js -->
+  <script data-main="js/app" src="js/libs/require.js"></script>
+  <script src="js/libs/echart/echarts.js"></script>
+  <!-- endbuild -->
+  <div class="popup popup-bind">
+    <div class="content-block">
+      <p class="popup-bind-text">为保障您的资金安全，首次购买需要进行身份验证及银行卡绑定</p>
+      <div class="center">
+        <a href="open/register.html" class="close-popup big-btn-blue">我知道了</a>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup-password">
+    <div class="line"></div>
+    <div class="password-dialog">
+      <div class="title center">请输入交易密码</div>
+      <div class="wrap">
+        <div class="number center">5000 元</div>
+        <div class="password">
+          <input type="tel" id="password" maxlength="6">
+          <div class="password-view" id="password-view">
+            <span>
+							<i class="circle"></i>
+						</span>
+            <span>
+							<i class="circle"></i>
+						</span>
+            <span>
+							<i class="circle"></i>
+						</span>
+            <span>
+							<i class="circle"></i>
+						</span>
+            <span>
+							<i class="circle"></i>
+						</span>
+            <span>
+							<i class="circle"></i>
+						</span>
+          </div>
+        </div>
+        <div class="bottom-btn row">
+          <a class="btn iden-code-disable col-50 close-popup" id="pp-cancel">取消</a>
+          <a class="btn btn-blue col-50" id="pp-enter">确定</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

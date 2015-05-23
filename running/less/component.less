@@ -1,0 +1,139 @@
+// 按钮
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 43%;
+    height: 4.7rem;
+    line-height: 4.7rem;
+    .rounded(2.35rem);
+    color: #fff;
+}
+
+.btn-red {
+    .btn;
+    background-color: @red;
+}
+
+.btn-gray {
+    .btn;
+    background-color: @gray;
+}
+
+.btn-blue {
+    .btn;
+    background-color: @blue;
+}
+
+.big-btn {
+    display: inline-block;
+    text-align: center;
+    width: 95%;
+    height: 5rem;
+    line-height: 5rem;
+    .rounded(2.5rem);
+    font-size: @font-size-big;
+    color: #fff;
+    margin: 3rem 0 1rem 0;
+}
+
+.big-btn-blue {
+    .big-btn;
+    background-color: @blue;
+}
+
+.big-btn-red {
+    .big-btn;
+    background-color: @red;
+}
+
+.sm-btn {
+    display: inline-block;
+    width: 5.2rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    .rounded(1.3rem);
+    .inner-border(1px, @red);
+    font-size: @font-size-normal;
+    color: @red;
+}
+
+//tag
+.tag {
+    width: 6.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    .rounded(1rem);
+    background-color: @green;
+    font-size: @font-size-normal;
+}
+
+// 带三角提示
+//字体颜色
+.red {
+    color: @red!important;
+}
+
+.green {
+    color: @number-green;
+}
+
+.orange {
+    color: @orange;
+}
+
+// 文字大小
+.small-text {
+    font-size: @font-size-small;
+}
+
+.normal-text {
+    font-size: @font-size-normal;
+}
+
+.big-text {
+    font-size: @font-size-big;
+}
+
+// 居中
+.center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+// 提示文字
+.tooltip {
+    width: 100%;
+    padding: 5% 5% 0;
+}
+
+//表单右侧按钮
+.form-right-button {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 50%;
+    margin-top: -1.4rem;
+    width: 9.6rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+.iden-code {
+    background-color: @orange;
+    .inner-border(1px, darken(@orange, 10%));
+    .rounded(.4rem);
+    color: #fff;
+    font-size: @font-size-normal;
+}
+
+.iden-code-disable {
+    background-color: #cccccc;
+    .inner-border(1px, #cccccc);
+}

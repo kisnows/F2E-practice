@@ -1,0 +1,63 @@
+.home{
+	text-align: center;
+	background-color: #fff;
+	.home-title{
+		font-size: 3rem;
+		font-weight: normal;
+		color: @red;
+		margin-bottom: 1.6rem;
+	}
+	.normal-text{
+		font-size: @font-size-normal;
+		color: @font-color;
+	}
+	.income-percent{
+		font-size: 8rem;
+		color: @red;
+		span{
+			display: inline-block;
+			width: 6.4rem;
+			height: 9rem;
+			line-height: 9rem;
+			margin-right: -1.4rem;
+			.inner-border(1px,@border-color);
+			.rounded(1.4rem;)
+		}
+		strong{
+			margin-right: -1.6rem;
+		}
+	}
+	.tip{
+		font-size: @font-size-small;
+		display: inline-block;
+		text-align: center;
+		width: 16rem;
+		height: 2.7rem;
+		line-height: 2.7rem;
+		color: @font-color;
+		.rounded(1.35rem);
+		background-color: @gray;
+		margin-bottom: 7rem;
+		margin-top: 3rem;
+		position: relative;
+		&:before{
+			position: absolute;
+			top: -0.8rem;
+			left: 50%;
+			margin-left: -0.6rem;
+			content: '';
+			.triangle(@direction: up,@size:1rem,@color:@gray)
+		}
+	}
+	.buy{
+		width: 70%;
+	}
+	.small-text{
+		position: relative;
+		line-height: 3.6rem;
+		height: 3.6rem;
+		.iconfont{
+			font-size: 1.8rem;
+		}
+	}
+}

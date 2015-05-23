@@ -138,21 +138,11 @@
                 content: '';
                 display: inline-block;
                 width: 148px;
-                border-top: 2px dashed #FEF981;
+                border-top: 2px dashed #f6a274;
                 position: absolute;
                 left: 82px;
                 height: 80.625px;
                 top: 30px;
-                // -webkit-transform: scale(1, 1);
-                // -moz-transform: scale(1, 1);
-                // -ms-transform: scale(1, 1);
-                // -o-transform: scale(1, 1);
-                // transform: scale(1, 1);
-                // -webkit-animation-name: line;
-                // -moz-animation-name: line;
-                // -ms-animation-name: line;
-                // -o-animation-name: line;
-                // animation-name: line;
             }
             .years {
                 position: absolute;
@@ -163,33 +153,23 @@
         }
         .sign-animation {
             //mix
-            -webkit-animation: road-sign 5s linear 1;
-            -moz-animation: road-sign 5s linear 1;
-            -ms-animation: road-sign 5s linear 1;
-            -o-animation: road-sign 5s linear 1;
-            animation: road-sign 5s linear 1;
             top: -80px;
-            // -webkit-transform: scale(.5, .5);
-            // -moz-transform: scale(.5, .5);
-            // -ms-transform: scale(.5, .5);
-            // -o-transform: scale(.5, .5);
-            // transform: scale(.5, .5);
         }
         // 最后一个路标
         .road-sign-top {
             .sign-animation();
-            -webkit-animation: road-sing-last 2.5s linear 5s 1;
-            -moz-animation: road-sing-last 2.5s linear 5s 1;
-            -ms-animation: road-sing-last 2.5s linear 5s 1;
-            -o-animation: road-sing-last 2.5s linear 5s 1;
-            animation: road-sing-last 2.5s linear 5s 1;
+            -webkit-animation: road-sing-last 2.5s linear 20s 1;
+            -moz-animation: road-sing-last 2.5s linear 20s 1;
+            -ms-animation: road-sing-last 2.5s linear 20s 1;
+            -o-animation: road-sing-last 2.5s linear 20s 1;
+            animation: road-sing-last 2.5s linear 20s 1;
             animation-fill-mode: forwards;
             -webkit-animation-fill-mode: forwards;
             &:after {
                 content: '';
                 display: inline-block;
                 width: 148px;
-                border-top: 2px dashed #fff;
+                border-top: 2px dashed #f6a274;
                 position: absolute;
                 left: 82px;
                 height: 80.625px;
@@ -209,20 +189,20 @@
         // 第二个路标
         .road-sign-middle {
             .sign-animation();
-            -webkit-animation: road-sign 5s linear 2.5s 1;
-            -moz-animation: road-sign 5s linear 2.5s 1;
-            -ms-animation: road-sign 5s linear 2.5s 1;
-            -o-animation: road-sign 5s linear 2.5s 1;
-            animation: road-sign 5s linear 2.5s 1;
+            -webkit-animation: road-sign 10s linear 10s 1;
+            -moz-animation: road-sign 10s linear 10s 1;
+            -ms-animation: road-sign 10s linear 10s 1;
+            -o-animation: road-sign 10s linear 10s 1;
+            animation: road-sign 10s linear 10s 1;
         }
-        // 第三个路标
+        // 第一个路标
         .road-sign-bottom {
             .sign-animation();
-            -webkit-animation: road-sign 5s linear 1;
-            -moz-animation: road-sign 5s linear 1;
-            -ms-animation: road-sign 5s linear 1;
-            -o-animation: road-sign 5s linear 1;
-            animation: road-sign 5s linear 1;
+            -webkit-animation: road-sign 10s linear 1;
+            -moz-animation: road-sign 10s linear 1;
+            -ms-animation: road-sign 10s linear 1;
+            -o-animation: road-sign 10s linear 1;
+            animation: road-sign 10s linear 1;
         }
         // 跑道
         .runway {
@@ -232,11 +212,11 @@
             position: relative;
             background: url(../imgs/plan/runing-01.png) 0 0 repeat-y;
             background-size: 210*.84px;
-            -webkit-animation: runway .6s linear 12;
-            -moz-animation: runway .6s linear 12;
-            -ms-animation: runway .6s linear 12;
-            -o-animation: runway .6s linear 12;
-            animation: runway .6s linear 12;
+            -webkit-animation: runway .8s linear infinite;
+            -moz-animation: runway .8s linear infinite;
+            -ms-animation: runway .8s linear infinite;
+            -o-animation: runway .8s linear infinite;
+            animation: runway .8s linear infinite;
         }
         // 小人
         .person {
@@ -244,12 +224,13 @@
             height: 110px;
             background: url(../imgs/plan/person1.png) -7px 0 no-repeat;
             background-size: auto 110px;
-            -webkit-animation: run .5s 15;
-            -moz-animation: run .5s 15;
-            -ms-animation: run .5s 15;
-            -o-animation: run .5s 15;
-            animation: run .5s 15;
+            -webkit-animation: run .5s infinite;
+            -moz-animation: run .5s infinite;
+            -ms-animation: run .5s infinite;
+            -o-animation: run .5s infinite;
+            animation: run .5s infinite;
             -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
             position: absolute;
             top: 40%;
             left: 110*.84px;
@@ -279,11 +260,11 @@
                     transform: scale(.8,.8);
             background: url(../imgs/plan/running-sign_03.png) 0 0 no-repeat;
             background-size: 330px auto;
-            -webkit-animation: running-sign 3s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-            -moz-animation: running-sign 3s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-            -ms-animation: running-sign 3s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-            -o-animation: running-sign 3s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-            animation: running-sign 3s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+            -webkit-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+            -moz-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+            -ms-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+            -o-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+            animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
             .number {
                 font-size: 28px;
                 color: #d62541;
@@ -328,18 +309,20 @@
             }
         }
         .cash-sign1 {
-            animation-delay: 0s;
-            -webkit-animation-delay: 0s;
+            animation-delay: 1.5s;
+            -webkit-animation-delay: 1.5s;
         }
         .cash-sign2 {
-            animation-delay: 3.5s;
-            -webkit-animation-delay: 3.5s;
+            animation-delay: 11.5s;
+            -webkit-animation-delay: 11.5s;
         }
         .cash-sign3 {
             animation-name: running-sign-last;
             -webkit-animation-name: running-sign-last;
-            animation-delay: 7s;
-            -webkit-animation-delay: 7s;
+            animation-delay: 21.5s;
+            -webkit-animation-delay: 21.5s;
+            animation-duration: 5s;
+            -webkit-animation-duration: 5s;
             animation-fill-mode: forwards;
             -webkit-animation-fill-mode: forwards;
         }
@@ -486,11 +469,9 @@
         @-webkit-keyframes road-sign {
             0% {
                 top: -14px;
-                // -webkit-transform: scale(.5, .5);
-                // -moz-transform: scale(.5, .5);
-                // -ms-transform: scale(.5, .5);
-                // -o-transform: scale(.5, .5);
-                // transform: scale(.5, .5);
+            }
+            25%{
+                top: 40%;
             }
             50% {
                 top: 40%;
@@ -499,6 +480,9 @@
                 -ms-transform: scale(1, 1);
                 -o-transform: scale(1, 1);
                 transform: scale(1, 1);
+            }
+            75%{
+                top:40%
             }
             100% {
                 top: 100%;
@@ -512,11 +496,9 @@
         @-moz-keyframes road-sign {
             0% {
                 top: -14px;
-                -webkit-transform: scale(.5, .5);
-                -moz-transform: scale(.5, .5);
-                -ms-transform: scale(.5, .5);
-                -o-transform: scale(.5, .5);
-                transform: scale(.5, .5);
+            }
+            25%{
+                top: 40%;
             }
             50% {
                 top: 40%;
@@ -525,6 +507,9 @@
                 -ms-transform: scale(1, 1);
                 -o-transform: scale(1, 1);
                 transform: scale(1, 1);
+            }
+            75%{
+                top:40%
             }
             100% {
                 top: 100%;
@@ -564,11 +549,9 @@
         @-o-keyframes road-sign {
             0% {
                 top: -14px;
-                -webkit-transform: scale(.5, .5);
-                -moz-transform: scale(.5, .5);
-                -ms-transform: scale(.5, .5);
-                -o-transform: scale(.5, .5);
-                transform: scale(.5, .5);
+            }
+            25%{
+                top: 40%;
             }
             50% {
                 top: 40%;
@@ -577,6 +560,9 @@
                 -ms-transform: scale(1, 1);
                 -o-transform: scale(1, 1);
                 transform: scale(1, 1);
+            }
+            75%{
+                top:40%
             }
             100% {
                 top: 100%;
@@ -590,11 +576,9 @@
         @keyframes road-sign {
             0% {
                 top: -14px;
-                // -webkit-transform: scale(.5, .5);
-                // -moz-transform: scale(.5, .5);
-                // -ms-transform: scale(.5, .5);
-                // -o-transform: scale(.5, .5);
-                // transform: scale(.5, .5);
+            }
+            25%{
+                top: 40%;
             }
             50% {
                 top: 40%;
@@ -603,6 +587,9 @@
                 -ms-transform: scale(1, 1);
                 -o-transform: scale(1, 1);
                 transform: scale(1, 1);
+            }
+            75%{
+                top:40%
             }
             100% {
                 top: 100%;
@@ -637,7 +624,6 @@
                 -ms-transform: scale(1, 1);
                 -o-transform: scale(1, 1);
                 transform: scale(1, 1);
-                animation-play-state: paused;
             }
         }
         @-ms-keyframes road-sing-last {
@@ -1087,6 +1073,121 @@
                 -ms-transform: rotate(0deg);
                 -o-transform: rotate(0deg);
                 transform: rotate(0deg);
+            }
+        }
+        @-webkit-keyframes line {
+            0% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            50% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            100% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+        @-moz-keyframes line {
+            0% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            50% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            100% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+        @-ms-keyframes line {
+            0% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            50% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            100% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+        @-o-keyframes line {
+            0% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            50% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            100% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+        @keyframes line {
+            0% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            50% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            100% {
+                -webkit-transform: scale(1, 1);
+                -moz-transform: scale(1, 1);
+                -ms-transform: scale(1, 1);
+                -o-transform: scale(1, 1);
+                transform: scale(1, 1);
             }
         }
     }

@@ -1,0 +1,136 @@
+.detail{
+	padding-top: 17.4rem!important;
+	.top,.buttons-row{
+		width: 100%;
+		// overflow: hidden;
+		position: fixed;
+	}
+	.top{
+		top: 44px;
+	}
+
+	.top {
+	  background-image: -webkit-linear-gradient(top, #f1613f, #f41d1c);
+	  background-image: -moz-linear-gradient(top, #f1613f, #f41d1c);
+	  background-image: -ms-linear-gradient(top, #f1613f, #f41d1c);
+	  background-image: -o-linear-gradient(top, #f1613f, #f41d1c);
+	  background-image: linear-gradient(top, #f1613f, #f41d1c);
+	  color: #fff;
+	  height: 14rem;
+	  .flexbox;
+	  .flex-flow;
+	  .first, .second {
+	    .flex(1);
+	    .flexbox;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    margin-left: 2.4rem;
+	    margin-right: 2.4rem;
+	    span {
+	      .flex(1);
+	    }
+	    .left {
+	      text-align: left;
+	    }
+	    .right {
+	      text-align: right;
+	    }
+	    .percent{
+	    	font-size: 6rem;
+	    	line-height: 6rem;
+	    }
+	  }
+	  .first {
+	    .right {
+	      text-align: right;
+	    }
+	    .circle {
+	      text-align: center;
+	      display: inline-block;
+	      width: 74px;
+	      height: 18px;
+	      line-height: 18px;
+	      border-radius: 37px;
+	      background: #fff;
+	    }
+	  }
+	  .second {
+	    margin-bottom: 20px;
+	    .right {
+	      margin-right: 14px;
+	      margin-top: 2.4rem;
+	    }
+	  }
+	}
+/* 	.content-block{
+	padding: 0;
+} */
+	.buttons-row{
+		width: 100%;
+		height: 5.4rem;
+		line-height: 5.4rem;
+		background-color: @gray;
+		.tab-link{
+			font-size: 1.8rem;
+			color: @font-dark-color;
+			text-align: center;
+		}
+		.active{
+			border-bottom: 2px solid @red;
+			-webkit-transition: all .25s ease;
+			   -moz-transition: all .25s ease;
+			    -ms-transition: all .25s ease;
+			     -o-transition: all .25s ease;
+			        transition: all .25s ease;
+		}
+	}
+
+	.tab {
+		padding: 12px 12px 0;
+		height: auto;
+	  .page1_item {
+	    min-height: 100px;
+	    border-bottom: 1px dotted #f9f9f9;
+	    dt {
+	      align-self: flex-start;
+	      font-size: 1.8rem;
+	      font-weight: bold;
+	    }
+	    dd {
+	      margin-left: 2.4rem;
+	      color: @font-dark-color;
+	    }
+	    & dd:first-of-type{
+	      margin-top: 1.6rem;
+	    }
+	  }
+	  & dl:last-child {
+	    border: none;
+	  }
+	  .tab_first_title {
+	    line-height: 24px;
+	    .radius {
+	      display: inline-block;
+	      vertical-align: middle;
+	      width: 8px;
+	      height: 22px;
+	      background: @purple-red;
+	      border-radius: 4px;
+	    }
+	    .right_radius {
+	      display: inline-block;
+	      vertical-align: middle;
+	      width: 70px;
+	      height: 16px;
+	      line-height: 16px;
+	      text-align: center;
+	      border-radius: 0 8px 8px 0;
+	      background: #000;
+	      color: #fff;
+	    }
+	  }
+	}
+	.tabs{
+		padding-top: 5.4rem;
+	}
+}

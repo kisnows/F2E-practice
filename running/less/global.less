@@ -1,0 +1,406 @@
+/* ==========================================================================
+   Modify Framework7 original class
+   ========================================================================== */
+// .toolbar-through .page-content {
+//   padding-bottom: 0;
+// }
+
+.content-block.fontz12{
+  font-size:12px;
+}
+.tc {
+  text-align:center;
+}
+.light-color{
+  color:#ccc;
+}
+.margTB20{
+  margin:20px 0
+}
+.panel {
+  background: #494949;
+}
+
+.list-block {
+  margin-top: 18px;
+  font-size: 1.6rem;
+}
+
+.list-block,
+.content-block {
+  margin-bottom: 18px;
+}
+
+.content-block-title + .list-block, .content-block-title + .content-block {
+  margin-top: 15px;
+}
+
+.list-block input[type="text"], .list-block input[type="password"], .list-block input[type="email"], .list-block input[type="tel"], .list-block input[type="url"], .list-block input[type="date"], .list-block input[type="datetime-local"], .list-block input[type="number"], .list-block select, .list-block textarea {
+  font-size: 1.6rem;
+}
+
+.list-block textarea {
+  height: 60px;
+}
+
+.list-block ul {
+  border-color: #e5e5e3;
+}
+
+.list-block .item-title, .list-block .smart-select .item-after {
+  font-size: 1.6rem;
+}
+
+.list-block .item-inner {
+  border-color: #f4f4f4;
+}
+
+.list-block .list-block-label {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.button.button-big {
+  font-size: 18px;
+}
+
+.modal-button {
+  // color: #000;
+  font-size: 1.6rem;
+}
+.modal-text{
+  font-size: 1.6rem;
+  padding: 1rem .5rem 2rem;
+}
+.navbar {
+  border-color: #e5e5e3;
+}
+
+.navbar a.link {
+  color: #444;
+}
+i.icon-bars {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 26'><path fill='%23000000' d='M0,0h4v4H0V0z M8,1h34v2H8V1z M0,11h4v4H0V11z M8,12h34v2H8V12z M0,22h4v4H0V22z M8,23h34v2H8V23z'/></svg>") !important;
+}
+i.icon-back{
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+}
+.navbar .left .back {
+  color: #fff;
+}
+.navbar .left .icon-only {
+  display: -webkit-box;
+  -webkit-box-pack: start;
+}
+
+.navbar .right .icon-only {
+  display: -webkit-box;
+  -webkit-box-pack: end;
+}
+
+.navbar .center {
+  font-size: 18px;
+}
+
+.content-block-title {
+  margin-top: 18px;
+  font-size: 15px;
+  white-space: normal;
+  line-height: 20px;
+}
+
+.searchbar.searchbar-active .searchbar-cancel {
+  color: #666;
+}
+
+label.label-radio input[type="checkbox"]:checked ~ .item-inner, label.label-radio input[type="radio"]:checked ~ .item-inner {
+  background-size: auto 15px;
+  background-repeat: no-repeat;
+}
+
+// html.android label.label-radio input[type="checkbox"]:checked ~ .item-inner,
+// html.android label.label-radio input[type="radio"]:checked ~ .item-inner,
+// html.android .select-radio[type="radio"]:checked + .select-trigger {
+//   position: relative;
+//   background-image: none !important;
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     right: 15px;
+//     top: 50%;
+//     z-index: 9;
+//     display: block;
+//     width: 22px;
+//     height: 17px;
+//     -webkit-transform: translateY(-50%);
+//     transform: translateY(-50%);
+//   }
+// }
+
+// html.android .list-block .item-link .item-inner {
+//   position: relative;
+//   background-image: none !important;
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     right: 15px;
+//     top: 50%;
+//     z-index: 9;
+//     display: block;
+//     width: 10px;
+//     height: 20px;
+//     background-image: url("data:image/svg+xml;charset=utf-8,<svg viewBox='0 0 60 120' xmlns='http://www.w3.org/2000/svg'><path d='m60 61.5-38.25 38.25-9.75-9.75 29.25-28.5-29.25-28.5 9.75-9.75z' fill='%23c7c7cc'/></svg>");
+//     -webkit-transform: translateY(-50%);
+//     transform: translateY(-50%);
+//   }
+// }
+html.android .icon-form-checkbox{
+  margin-top: 3px;
+}
+html.android .row .col-50 {
+  width: 46%;
+}
+
+html.android .row.no-gutter .col-50 {
+  width: 50%;
+}
+
+html.android .row .col-33 {
+  width: 30%;
+}
+i.icon-form-checkbox{
+  margin-top: 1px!important;
+}
+/* ==========================================================================
+   Add mine
+   ========================================================================== */
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 90%; /* Android */
+  width: calc(~"100% - 30px");
+}
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 30px;
+  width: 90%; /* Android */
+  width: calc(~"100% - 30px");
+}
+
+.info-content {
+  margin-top: -30px;
+  padding: 0 15px;
+}
+
+.info {
+  font-size: 18px;
+  text-align: center;
+
+  .icon-success {
+    color: #80d61e;
+  }
+  .icon-fail {
+    color: #d42323;
+  }
+  .desc {
+    font-size: 14px;
+  }
+}
+
+.bare .item-inner {
+  border-bottom: 1px solid transparent !important;
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.indicator {
+  position: relative;
+  height: 30px;
+}
+
+.step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  .size(100%, 30px);
+  box-sizing: border-box;
+  padding: 7px 0;
+  margin: 0;
+  border-bottom: 1px solid #e5e5e3;
+  background-color: #fff;
+  counter-reset: step;
+  .step-item {
+    float: left;
+    width: 33%;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    color: #858482;
+    counter-increment: step;
+    &:before {
+      content: counter(step, decimal)" ";
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 10px;
+      margin-left: 99%;
+      margin-top: -13px;
+      opacity: .5;
+      background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 20'><path d='M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z' fill='%23000'/></svg>");
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-transform: scaleX(-1);
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.select-trigger {
+  .border-box();
+  padding: 15px 13px;
+  border: 1px solid #dfdfdd;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.select-radio {
+  display: none;
+}
+
+.select-radio[type="radio"]:checked + .select-trigger {
+  background-size: auto 15px;
+  background-repeat: no-repeat;
+  background-position: calc(~"100% - 15px") center;
+}
+
+.score {
+  font-size: 40px;
+}
+
+.level {
+  font-size: 20px;
+}
+
+.fix-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.agree-block {
+  .flexbox();
+  .align-items(flex-start);
+  font-size: 15px;
+  .item-media {
+    .flexbox();
+    // .flex-wrap(no-wrap);
+    .flex-shrink(0);
+    .border-box();
+  }
+  .item-inner {
+    width: 100%;
+    margin-left: 10px;
+    .flexbox();
+    .border-box();
+    .item-title {
+      .flex-shrink(1);
+    }
+  }
+  i.icon-form-checkbox {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 0 !important;
+    background-color: #fff;
+  }
+}
+
+html.android .agree-block {
+  .item-inner {
+    width: 90%;
+  }
+  i.icon-form-checkbox {
+    margin-top: -5px;
+  }
+}
+
+/* ==========================================================================
+   Panel
+   ========================================================================== */
+.panel {
+  .title-block {
+    .border-box();
+    height: 44px;
+    padding-left: 15px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid #848484;
+    background: #373737;
+  }
+  .content-block {
+    margin-top: 0;
+  }
+  .button {
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+}
+
+.panel-list {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+  li {
+    line-height: 60px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid #646464;
+    .item-link {
+      color: #fff !important;
+    }
+    .item-inner {
+      .flexbox();
+      .justify-content(space-between);
+      .item-title,
+      .item-media {
+        .flex-shrink(1);
+      }
+    }
+
+    .icon-bankcard {
+      font-size: 18px;
+      margin-right: 3px;
+    }
+  }
+}
+.item-media{
+  font-size: 1.6rem;
+}
+html.android .panel .fixed-bottom {
+  position: absolute;
+}
+
+/* ==========================================================================
+   Performance enhance
+   ========================================================================== */
+html.android label.label-checkbox,
+html.android label.label-radio,
+html.android .list-block .item-link,
+html.android .searchbar.searchbar-active .searchbar-cancel {
+  .transition(0ms);
+}

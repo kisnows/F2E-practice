@@ -1,0 +1,64 @@
+.intro{
+	background-color: @nav-color;
+	.topbar{
+		height: 5.4rem;
+		// line-height: 5.4rem;
+		padding: 1.4rem;
+		.left{
+			float: left;
+			font-size: 2rem;
+		}
+		.right{
+			float: right;
+			.tag{
+				float: left;
+				margin-top: .2rem;
+				margin-right: .6rem;
+			}
+		}
+	}
+	.chart{
+		height: 21rem;
+		background-color: #fff;
+		margin-bottom: .4rem;
+		.chart-title{
+			height: 3.8rem;
+			line-height: 3.8rem;
+			font-size: @font-size-normal;
+			padding: 0 1rem;
+			border-bottom: 1px solid #f6f9fa;
+			span{
+				color: @red;
+				font-size: 2.8rem;
+			}
+		}
+		.char{
+			height: 17.2rem;
+			// height: 172px;
+		}
+	}
+	.chart2{
+		margin-bottom: 0;
+	}
+	.list-block{
+		margin: 0;
+		.item-title{
+			color: @font-dark-color;
+		}
+		.low{
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			background-color: @dark-green;
+			.rounded(50%);
+			text-align: center;
+			color: #fff;
+			text-indent: 6px;
+		}
+		.read-more{
+			.item-title{
+				color: @font-dark-color;
+			}
+		}
+	}
+}

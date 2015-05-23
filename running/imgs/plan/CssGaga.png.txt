@@ -1,0 +1,4 @@
+sign-c.png, 199, 82, 0, 0
+sign-e.png, 197, 82, 201, 0
+sigin-btn-a.png, 63, 62, 400, 0
+sign-btn-m.png, 62, 62, 465, 0
