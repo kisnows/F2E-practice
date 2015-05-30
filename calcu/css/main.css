@@ -1,0 +1,78 @@
+body,
+ul,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+.cal {
+  position: relative;
+  width: 220px;
+  height: 280px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 2px;
+}
+.shadow {
+  box-shadow: 0 0 2px;
+}
+.btn-bg {
+  background-image: -webkit-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: linear-gradient(top, #ffffff, #000000, #ffffff);
+}
+.screen {
+  height: 40px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 2px;
+  text-align: right;
+}
+.top {
+  background-color: red;
+}
+.bottom {
+  background-color: blue;
+  font-size: 20px;
+}
+span {
+  display: inline-block;
+  vertical-align: mid;
+  zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: 0 0 2px;
+  text-align: center;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #000000, #ffffff);
+  background-image: linear-gradient(top, #ffffff, #000000, #ffffff);
+}
+.left {
+  float: left;
+}
+.zero {
+  width: 80px;
+  height: 30px;
+}
+.equal {
+  float: right;
+  width: 40px;
+  height: 60px;
+  box-shadow: 0 0 2px;
+}
+/*# sourceMappingURL=main.css.map */

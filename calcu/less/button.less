@@ -1,0 +1,66 @@
+@wid: 44px;
+@hei: 34px;
+li{
+	.clearfix;
+}
+span{
+	display: block;
+	float: left;
+	width: @wid;
+	height: @hei;
+	line-height: @hei;
+	color: #ffffff;
+	.shadow;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	.btn-bg;
+	margin-right: (220px-@wid*4)/3;
+	margin-bottom: (280px-(40+14)-5*@hei)/5;
+}
+li span:last-child{
+	margin-right: 0;
+}
+span:hover{
+	box-shadow: 0 0 4px;
+	.btn-bg(@cl-btnn-bottom,darken(@cl-btnn-top,20%));
+}
+.lastl{
+	overflow: hidden;
+	height: 91px;
+}
+.left{
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+}
+.zero{
+	width: @wid*2+(220px-@wid*4)/3;
+	height: @hei;
+}
+.clear{
+	.btn-bg(@cl-btncle-top,@cl-btncle-bottom)
+}
+.clear:hover{
+	.btn-bg(darken(@cl-btncle-top,10%),darken(@cl-btncle-bottom,10%))
+}
+.equal{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	margin-bottom: 0;
+	width: @wid;
+	height: @hei*2+(280px-(40+14)-5*@hei)/5;
+	// .shadow;
+	.btn-bg(@cl-btnequ-top,@cl-btnequ-bottom);
+}
+.equal:hover{
+	.btn-bg(darken(@cl-btnequ-top,10%),darken(@cl-btnequ-bottom,10%))
+}
+.op{
+	.btn-bg(@cl-btnop-top,@cl-btnop-bottom)
+}
+.op:hover{
+	.btn-bg(darken(@cl-btnop-top,10%),darken(@cl-btnop-bottom,10%))
+}

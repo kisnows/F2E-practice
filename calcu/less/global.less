@@ -1,0 +1,62 @@
+//样式重置
+body{
+	// padding:10px;
+	font-size: 12px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+ul,li,span{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+//计算器整体布局
+.cal{
+	position: relative;
+	width: 220px;
+	padding: 10px;
+	padding-bottom: 0;
+	margin: 20px auto;
+	.shadow;
+	border: 1px solid #000000;
+	overflow: hidden;
+	background-color: @cl-bg;
+}
+
+.title{
+	margin-bottom: 8px;
+}
+//定义混合
+.shadow(@si:2px,@cl:#000000){
+	box-shadow: 0 0 @si @cl;
+}
+
+.btn-bg(@top:@cl-btnn-top,@bottom:@cl-btnn-bottom){
+	background-image: -webkit-linear-gradient(top, @top, @bottom,@top);
+	background-image:    -moz-linear-gradient(top, @top, @bottom,@top);
+	background-image:     -ms-linear-gradient(top, @top, @bottom,@top);
+	background-image:      -o-linear-gradient(top, @top, @bottom,@top);
+	background-image:         linear-gradient(top, @top, @bottom,@top);
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
