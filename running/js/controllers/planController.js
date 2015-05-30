@@ -38,16 +38,16 @@ define(['views/planViews'], function(View) {
             that.timer = setTimeout(function() {
                 pausedAll();
                 setTimeout(function() {
-                    runningAll();
-                }, 5000)
-            }, 2.5 * 1000)
+                    running('.runway');
+                }, 2000)
+            }, 4000)
             $$('.road-sign-bottom').animationEnd(function() {
                 that.timer = setTimeout(function() {
                     pausedAll();
                     setTimeout(function() {
-                        runningAll();
-                    }, 5000)
-                }, 2.5 * 1000)
+                        running('.runway');
+                    }, 2000)
+                }, 4000)
             })
         },
         onceAgain: function() {
@@ -55,25 +55,23 @@ define(['views/planViews'], function(View) {
             $$('.once-again').removeClass('active');
             $$('.running').removeClass('active');
         }
-    };
+    }
 
     function paused(el) {
         $$(el).css({
             '-webkit-animation-play-state': 'paused',
             'animation-play-state': 'paused'
-        });
+        })
     }
 
     function running(el) {
         $$(el).css({
             '-webkit-animation-play-state': 'running',
             'animation-play-state': 'running'
-        });
+        })
     }
 
     function pausedAll() {
-        paused('.person');
-        paused('.person1');
         paused('.runway');
     }
 
@@ -84,13 +82,15 @@ define(['views/planViews'], function(View) {
     }
 
     function finish() {
-            $$('#cashTip').animationEnd(function() {
-                $$('.once-again').addClass('active');
-            })
-            setTimeout(function() {
-                    pausedAll();
-                }, 22.5 * 1000)
-        }
+        $$('#cashTip').animationEnd(function() {
+            $$('.once-again').addClass('active');
+        })
+        setTimeout(function() {
+            paused('.person');
+            paused('.person1');
+            paused('.runway');
+        }, 22.5 * 1000)
+    }
     var bindings = [{
         element: '.sign',
         event: 'click',
@@ -119,11 +119,10 @@ define(['views/planViews'], function(View) {
         element: '.once-again .top-btn',
         event: 'click',
         handler: initPage.onceAgain
-    }];
+    }]
 
 
     function init() {
-        console.log('其实我觉得最后这个效果不是很好，可是老大说要这样。\n改了好几版，改成了这样，\n我该说点什么呢');
         View.render({
             bindings: bindings
         });
@@ -131,5 +130,5 @@ define(['views/planViews'], function(View) {
 
     return {
         init: init
-    };
-});
+    }
+})

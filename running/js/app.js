@@ -4,7 +4,8 @@ require.config({
 		Framework7: 'libs/framework7',
 		text: 'libs/text',
 		GS: 'services/globalService',
-		tpl: '../tpl'
+		tpl: '../tpl',
+		echarts: 'libs/echart'
 	},
 	shim: {
 		Framework7: {
@@ -54,8 +55,17 @@ require(['Framework7', 'router'], function(Framework7, Router) {
 	window.mainView = window.App.addView('#home', {
 		dynamicNavbar: true
 	});
+	window.walletView = window.App.addView('#wallet', {
+		dynamicNavbar: true
+	});
+	window.planView = window.App.addView('#plan', {
+		dynamicNavbar: true
+	});
+	window.moreView = window.App.addView('#more', {
+		dynamicNavbar: true
+	});
 
 	Router.init();
 	Router.load('plan');
-	// Router.load('index');
+	Router.load('index');
 });

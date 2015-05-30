@@ -1938,12 +1938,13 @@ button {
   height: 110px;
   background: url(../imgs/plan/person1.png) -7px 0 no-repeat;
   background-size: auto 110px;
-  -webkit-animation: run .5s infinite;
-  -moz-animation: run .5s infinite;
-  -ms-animation: run .5s infinite;
-  -o-animation: run .5s infinite;
-  animation: run .5s infinite;
+  -webkit-animation: run .6s infinite;
+  -moz-animation: run .6s infinite;
+  -ms-animation: run .6s infinite;
+  -o-animation: run .6s infinite;
+  animation: run .6s infinite;
   -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
   position: absolute;
   top: 40%;
   left: 92.4px;
@@ -1952,12 +1953,13 @@ button {
   width: 62px;
   height: 110px;
   background: url(../imgs/plan/person1.png) -7px 0 no-repeat;
-  -webkit-animation: run .5s infinite;
-  -moz-animation: run .5s infinite;
-  -ms-animation: run .5s infinite;
-  -o-animation: run .5s infinite;
-  animation: run .5s infinite;
+  -webkit-animation: run .6s infinite;
+  -moz-animation: run .6s infinite;
+  -ms-animation: run .6s infinite;
+  -o-animation: run .6s infinite;
+  animation: run .6s infinite;
   -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
   position: absolute;
   top: 40%;
   left: 92.4px;
@@ -1983,11 +1985,11 @@ button {
   transform: scale(0.8, 0.8);
   background: url(../imgs/plan/running-sign_03.png) 0 0 no-repeat;
   background-size: 330px auto;
-  -webkit-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-  -moz-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-  -ms-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-  -o-animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
-  animation: running-sign 7s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+  -webkit-animation: running-sign 5s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+  -moz-animation: running-sign 5s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+  -ms-animation: running-sign 5s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+  -o-animation: running-sign 5s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
+  animation: running-sign 5s cubic-bezier(0.68, -0.55, 0.37, 1.55) 1;
 }
 .plan .active.running .cash-tip .number {
   font-size: 28px;
@@ -2032,20 +2034,20 @@ button {
   float: left;
 }
 .plan .active.running .cash-sign1 {
-  animation-delay: 1.5s;
-  -webkit-animation-delay: 1.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
 }
 .plan .active.running .cash-sign2 {
-  animation-delay: 11.5s;
-  -webkit-animation-delay: 11.5s;
+  animation-delay: 12.5s;
+  -webkit-animation-delay: 12.5s;
 }
 .plan .active.running .cash-sign3 {
   animation-name: running-sign-last;
   -webkit-animation-name: running-sign-last;
   animation-delay: 21.5s;
   -webkit-animation-delay: 21.5s;
-  animation-duration: 5s;
-  -webkit-animation-duration: 5s;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
@@ -2193,134 +2195,70 @@ button {
   0% {
     top: -14px;
   }
-  25% {
+  40% {
     top: 40%;
   }
-  50% {
-    top: 40%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  75% {
+  60% {
     top: 40%;
   }
   100% {
     top: 100%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
   }
 }
 @-moz-keyframes road-sign {
   0% {
     top: -14px;
   }
-  25% {
+  40% {
     top: 40%;
   }
-  50% {
-    top: 40%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  75% {
+  60% {
     top: 40%;
   }
   100% {
     top: 100%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
   }
 }
 @-ms-keyframes road-sign {
   0% {
     top: -14px;
-    -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -ms-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
-    transform: scale(0.5, 0.5);
   }
-  50% {
+  40% {
     top: 40%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
+  }
+  60% {
+    top: 40%;
   }
   100% {
     top: 100%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
   }
 }
 @-o-keyframes road-sign {
   0% {
     top: -14px;
   }
-  25% {
+  40% {
     top: 40%;
   }
-  50% {
-    top: 40%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  75% {
+  60% {
     top: 40%;
   }
   100% {
     top: 100%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
   }
 }
 @keyframes road-sign {
   0% {
     top: -14px;
   }
-  25% {
+  40% {
     top: 40%;
   }
-  50% {
-    top: 40%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  75% {
+  60% {
     top: 40%;
   }
   100% {
     top: 100%;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
   }
 }
 @-webkit-keyframes road-sing-last {
