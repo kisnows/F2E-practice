@@ -1649,6 +1649,7 @@ button {
 }
 .open-login {
   background-color: #f6f6f6;
+  padding-top: 48px;
 }
 .open-buy .buy-tip {
   text-indent: 5rem;
@@ -2097,7 +2098,7 @@ button {
 }
 @keyframes runway {
   0% {
-    background-position: 14px 0;
+    background-position: 0 0px;
   }
   50% {
     background-position: 0 42.84px;
