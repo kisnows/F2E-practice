@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <title>Password</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+<div class="popup-password">
+    <div class="line"></div>
+    <div class="password-dialog">
+        <div class="title center">请输入交易密码</div>
+        <div class="wrap">
+            <div class="number center">5000 元</div>
+            <div class="password">
+                <input type="tel" id="password" maxlength="6"/>
+
+                <div class="password-view" id="password-view">
+                    <span><i class="circle"></i></span>
+                    <span><i class="circle"></i></span>
+                    <span><i class="circle"></i></span>
+                    <span><i class="circle"></i></span>
+                    <span><i class="circle"></i></span>
+                    <span><i class="circle"></i></span>
+                </div>
+            </div>
+            <div class="bottom-btn ">
+                <a class="btn iden-code-disable  close-popup" id="ppCancel">取消</a>
+                <a class="btn btn-blue " id="ppEnter">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        popupPassword(null, function (a) {
+            console.log(a + '1')
+        });
+    };
+</script>
+</body>
+</html>

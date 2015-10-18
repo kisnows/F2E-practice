@@ -1,0 +1,155 @@
+html{
+  font-size: 10px;
+  font-family: 'Helvetica Neue',Helvetica,"Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+}
+.popup-password {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 375px;
+  height: 627px;
+  margin: 0 auto;
+  position:relative;
+}
+.popup-password .password-dialog {
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 84%;
+  height: 23rem;
+}
+.popup-password .password-dialog .title {
+  height: 5.8rem;
+  line-height: 5.8rem;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+.popup-password .password-dialog .title:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.popup-password .password-dialog .wrap {
+  padding: 0 3rem;
+  text-align: center;
+}
+.popup-password .password-dialog .number {
+  height: 5.2rem;
+  line-height: 5.2rem;
+  font-size: 2rem;
+  color: #54a6ea;
+}
+.popup-password .password-dialog .password {
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+}
+.popup-password .password-dialog .password input {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 50px;
+  z-index: 3;
+  line-height: 10px;
+  font-size: 16px;
+  letter-spacing: 21px;
+  opacity: 0;
+}
+.popup-password .password-dialog .password .password-view {
+  top: 0;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  height: 4.2rem;
+  width: 200px;
+  font-size: 0;
+  -webkit-box-shadow: inset 0 0 0 1px #e7e7e7;
+  -moz-box-shadow: inset 0 0 0 1px #e7e7e7;
+  box-shadow: inset 0 0 0 1px #e7e7e7;
+  background-color: #fff;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.popup-password .password-dialog .password .password-view span {
+  border-right: 1px solid #e7e7e7;
+  position: relative;
+  width: 33px;
+  height: 4.2rem;
+  display: inline-block;
+  font-size: 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.popup-password .password-dialog .password .password-view span .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1rem;
+  height: 1rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #000;
+  display: none;
+}
+.popup-password .password-dialog .password .password-view span.active .circle {
+  display: inline-block;
+}
+.popup-password .password-dialog .password .password-view span:last-child {
+  border-right: none;
+}
+.popup-password .password-dialog .bottom-btn {
+  height: 3rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+.popup-password .password-dialog .bottom-btn .btn {
+  width: 45%;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  /* line-height: 3.6rem; */
+}
+.popup-password .password-dialog .bottom-btn .iden-code-disable {
+  float: left;
+  /* border-radius: 1.5rem; */
+  background-color: #cccccc;
+}
+.popup-password .password-dialog .bottom-btn .btn-blue {
+  float: right;
+  background-color: #54a6ea;
+}
