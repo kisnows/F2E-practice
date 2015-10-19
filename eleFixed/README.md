@@ -1,6 +1,6 @@
 #elefixed
 elefixed是一款js插件，提供原生js和jQuery版本。它可以让一个元素在随着页面向下滚动到达浏览器顶部时，固定在那，向上滚动时又回到原来的状态。
-查看[DEMO](http://kisnows.com/F2E-practice/eleFixed/)
+查看[DEMO](http://kisnows.com/F2E-practice/eleFixed/Demo/)
 
 其中elefixed.js是原生js版，不依赖其它库，jelefixed.js需要依赖jQuery。
 ##使用方法:
