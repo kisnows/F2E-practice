@@ -2,6 +2,5 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 node_modules
-dist
 bower_components
 .idea
