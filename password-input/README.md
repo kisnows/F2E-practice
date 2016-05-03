@@ -1,5 +1,5 @@
 #一个模仿支付宝交易密码输入框的前端实现
-DEMO: [http://kisnows.com/password-input/](http://kisnows.com/password-input/)
+DEMO: [http://kisnows.com/F2E-practice/password-input/](http://kisnows.com/password-input/)
 打开控制台，可以看到输入的密码以及点击按钮的动作。
 ##简介
 + 点击输入框，既可以输入或删除密码。
